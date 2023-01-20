@@ -1,0 +1,74 @@
+/* CREMLIN-PAGE */
+
+.cremlin {
+  background: #000;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cremlin::after {
+  content: "";
+  width: 100%;
+  height: 15%;
+  bottom: 0;
+  background: linear-gradient(to top, black, transparent);
+  position: absolute;
+  z-index: 1000;
+}
+
+/* CREMLIN-TITLE */
+
+.cremlin-title {
+  position: absolute;
+  color: #fff;
+  top: 1em;
+  left: 5em;
+  font-family: "Graphic", sans-serif;
+  font-weight: 400;
+  opacity: 0.7;
+  font-size: 2rem;
+  opacity: 0;
+}
+
+.cremlin-title._active,
+.cremlin-title-desc._active {
+  animation-duration: 0.5s;
+  animation-name: bounceInLeft;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-delay: 0.3s;
+}
+
+.cremlin-title-desc._active {
+  animation-delay: 0.6s;
+}
+
+.cremlin-title::before {
+  content: "/04";
+  position: absolute;
+  left: -20%;
+}
+
+.cremlin-title-desc {
+  position: absolute;
+  color: #fff;
+  top: 3.5em;
+  left: 14em;
+  font-family: "Graphic", sans-serif;
+  font-weight: 400;
+  opacity: 0.7;
+  font-size: 1.5em;
+  opacity: 0;
+}
+
+/* CREMLIN-IMAGE-TECH-BLOCK */
+
+#last {
+  display: none;
+}

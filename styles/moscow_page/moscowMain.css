@@ -1,0 +1,233 @@
+/* MOSCOW-PAGE */
+
+.moscow {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  font-family: "Graphic", sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.moscow::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  bottom: 0;
+  background: linear-gradient(to top, black, transparent);
+  z-index: 100;
+  pointer-events: none;
+}
+
+/* MOSCOW-PAGE-TITLE */
+
+.moscow__title {
+  position: absolute;
+  left: 6em;
+  top: 1em;
+  font-size: 2.5rem;
+}
+
+.moscow__title > * {
+  font-family: "Graphic", sans-serif;
+  opacity: 0.7;
+}
+
+.moscow__title-text {
+  position: relative;
+  opacity: 0;
+}
+
+.moscow__title-text._active {
+  animation-duration: 0.5s;
+  animation-name: bounceInLeft;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-delay: 0.3s;
+}
+
+.moscow__title-text::before {
+  content: "/03";
+  position: absolute;
+  left: -20%;
+}
+
+.moscow__title p {
+  position: absolute;
+  left: 3.5em;
+  top: 1.25em;
+  font-size: 1.25em;
+  opacity: 0;
+}
+
+.moscow__title p._active {
+  animation-duration: 0.5s;
+  animation-name: bounceInLeft;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-delay: 0.7s;
+}
+
+/* MOSCOW-PAGE-GALLERY */
+
+.moscow__gallery {
+  width: 50%;
+  height: 100vh;
+  left: 60%;
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  transition: opacity 2s ease-in;
+}
+
+.moscow__gallery._active {
+  opacity: 1;
+}
+
+.moscow__gallery::after {
+  content: "";
+  background: url(/assets/images/moscow_page/Gradient.png);
+  background-size: contain;
+  height: 100%;
+  width: 25%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.moscow__gallery::before {
+  content: "";
+  background: linear-gradient(to bottom, #000, transparent);
+  height: 20%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -0.1em;
+  z-index: 3333;
+  pointer-events: none;
+}
+
+/* MOSCOW-PAGE-NAV */
+
+.moscow__navigation {
+  position: absolute;
+  top: 30em;
+  left: 5em;
+  transform: translateY(-80%);
+  z-index: 5;
+  height: 20em;
+  width: 3rem;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* MOSCOW-PAGE-NAV-ITEM */
+
+.moscow__navigation-item {
+  height: 5em;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 5;
+}
+
+.moscow__navigation-item._active {
+  animation: fadeInLeft 0.5s both 0.5s;
+}
+
+#moscow-nav-item1 {
+  animation-delay: 0.2s;
+}
+
+#moscow-nav-item2 {
+  animation-delay: 0.4s;
+}
+
+#moscow-nav-item3 {
+  animation-delay: 0.6s;
+}
+
+.moscow__navigation-item-logo {
+  width: 100%;
+  height: 60%;
+}
+
+#moscow-nav-item1:hover .circle,
+#moscow-nav-item2:hover .circle-2,
+#moscow-nav-item3:hover .circle-3 {
+  animation: illuminate 0.5s ease infinite;
+}
+
+.circle,
+.circle-2,
+.circle-3 {
+  position: absolute;
+  top: 1em;
+  left: 0.8em;
+  z-index: 1;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  opacity: 0;
+  background: #cccccc;
+}
+
+.circle-2 {
+  left: 0.3em;
+}
+
+/* MOSCOW-PAGE-NAV-BLOCK */
+
+.moscow__block {
+  position: absolute;
+  width: 35em;
+  left: 12em;
+  top: 11.5em;
+  height: 24em;
+  background-image: url(/assets/images/moscow_page/navigation/Nav_item_border.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  opacity: 0;
+  font-family: "Graphic", sans-serif;
+  transition: opacity 0.7s ease;
+}
+
+.moscow__block._active.chosen {
+  animation: slideInUp 0.7s both;
+  opacity: 0.7;
+}
+
+/* ANIMATION */
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes illuminate {
+  0% {
+    transform: scale(0.7, 0.7);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}

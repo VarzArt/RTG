@@ -1,0 +1,270 @@
+.support {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.support__text {
+  width: max-content;
+  height: 100%;
+  position: relative;
+  color: #fff;
+  font-family: "Graphic", sans-serif;
+  margin-right: 1em;
+  opacity: 0.7;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.support__text-title {
+  font-weight: 400;
+  margin-top: 2em;
+  opacity: 0;
+}
+
+.support__text-title._active {
+  animation: bounceInRight 0.8s ease forwards;
+}
+
+.support__text-title span {
+  text-decoration: underline 0.1em;
+  cursor: pointer;
+}
+
+.support__text-title::after {
+  content: "/05";
+  position: absolute;
+  right: 0em;
+}
+
+.support__text-subtitle {
+  margin-top: 2em;
+  font-size: 0.75em;
+  font-weight: 400;
+  margin-left: 6.5em;
+  opacity: 0;
+}
+
+.support__text-subtitle.clicked {
+  animation: bounceInRight 0.8s ease forwards;
+}
+
+.support__text-content {
+  margin-top: auto;
+  margin-bottom: 3em;
+}
+
+.support__text-content-title {
+  margin-left: 4em;
+  font-size: 0.75em;
+  font-weight: 400;
+  opacity: 0;
+}
+
+.support__text-content-title.clicked {
+  animation: bounceInRight 0.8s ease 1s forwards;
+}
+
+.support__text-content-subtitle {
+  font-size: 0.55em;
+  font-weight: 400;
+  margin-top: 2em;
+  opacity: 0;
+}
+
+.support__text-content-subtitle.clicked {
+  animation: bounceInRight 0.8s ease 1.5s forwards;
+}
+
+.support__text-content-social {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  height: max-content;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  opacity: 0;
+}
+
+.support__text-content-social.clicked {
+  animation: backInUp 0.6s ease 2s forwards;
+}
+
+.support__text-content-social > * {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+}
+
+.support__text-content-social-github {
+  background-image: url(/assets/images/support_page/main/Github_logo.png);
+}
+
+.support__text-content-social-tg {
+  background-image: url(/assets/images/support_page/main/Tg_logo.png);
+}
+
+.support__text-content-social-insta {
+  background-image: url(/assets/images/support_page/main/Insta_logo.png);
+}
+
+#github,
+#tg,
+#insta {
+  position: absolute;
+  font-size: 0.5em;
+  font-family: "Span", sans-serif;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#github {
+  top: 3em;
+  left: -5em;
+}
+
+#github::after {
+  content: "";
+  width: 4em;
+  height: 2em;
+  background-image: url(/assets/images/support_page/main/Arrow.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  transform: rotate(180deg);
+  top: -1.5em;
+  left: 3.5em;
+}
+
+#tg {
+  top: -1em;
+  left: 30em;
+}
+
+#tg::after {
+  content: "";
+  width: 4em;
+  height: 2em;
+  background-image: url(/assets/images/support_page/main/Arrow.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1.5em;
+  left: -3em;
+}
+
+#insta {
+  left: 17em;
+  top: 8em;
+}
+
+#insta::after {
+  content: "";
+  width: 4em;
+  height: 2.5em;
+  background-image: url(/assets/images/support_page/main/Arrow.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  transform: rotate(80deg);
+  top: -3em;
+  left: -3.5em;
+}
+
+.support__text-content-social-github:hover ~ #github,
+.support__text-content-social-tg:hover ~ #tg,
+.support__text-content-social-insta:hover ~ #insta {
+  opacity: 1;
+}
+
+.support-video-button {
+  position: relative;
+  width: 12em;
+  height: 12em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.support-video-button-btn {
+  width: 12em;
+  height: 12em;
+  position: absolute;
+  background-image: url(/assets/images/support_page/main/Play_icon.png);
+  background-size: 100% 100%;
+  top: 0;
+  left: 7em;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.support-video-button-btn._active {
+  animation: rotateIn 1s ease 0.5s both;
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: translateX(-150%) rotate(-360deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%) scale(0);
+    opacity: 0;
+  }
+}
+
+.support-video-button-btn.notplay {
+  animation: fadeOut 0.4s ease both;
+}
+
+.support-video-button-text {
+  color: #fff;
+  font-family: "Span", sans-serif;
+  font-size: 1.5em;
+  position: absolute;
+  width: max-content;
+  top: -5.5em;
+  left: -2em;
+  transform: rotate(-30deg);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.support-video-button-text::after {
+  content: "";
+  width: 5em;
+  height: 2em;
+  background-image: url(/assets/images/support_page/main/Arrow.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  transform: rotate(-80deg);
+  top: 3em;
+  right: 4em;
+}
+
+.support-video-button-btn:hover ~ .support-video-button-text {
+  opacity: 0.7;
+}

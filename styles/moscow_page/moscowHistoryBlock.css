@@ -1,0 +1,78 @@
+/* MOSCOW-PAGE-NAV-BLOCK-HISTORY */
+
+.moscow__hystory-title {
+  text-align: end;
+  margin-right: 0.5em;
+  font-size: 1.8em;
+}
+
+.moscow-history-desc {
+  margin-top: 5em;
+  margin-right: 2em;
+  margin-left: 3em;
+  font-size: 0.8em;
+}
+
+.moscow-history-desc > * {
+  margin-bottom: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  width: min-content;
+}
+
+.moscow-history-desc p::before {
+  content: "→";
+  margin-right: 1em;
+}
+
+.moscow-history-desc p:last-child:before {
+  content: "";
+  margin-right: 0;
+}
+
+.moscow__block.chosen #p1,
+.moscow__block.chosen #p2,
+.moscow__block.chosen #p3,
+.moscow__block.chosen #p4,
+.moscow__block.chosen #p5,
+.moscow__block.chosen #p6,
+.moscow__block.chosen #p7 {
+  opacity: 0;
+  animation: typing 1.5s steps(60, end) both;
+  animation-delay: 0s;
+}
+
+.moscow__block.chosen #p2 {
+  animation-delay: 0.9s;
+}
+
+.moscow__block.chosen #p3 {
+  animation-delay: 1.3s;
+}
+
+.moscow__block.chosen #p4 {
+  animation-delay: 1.7s;
+}
+
+.moscow__block.chosen #p5 {
+  animation-delay: 2.3s;
+}
+
+.moscow__block.chosen #p6 {
+  animation-delay: 2.7s;
+}
+
+.moscow__block.chosen #p7 {
+  animation-delay: 3s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}

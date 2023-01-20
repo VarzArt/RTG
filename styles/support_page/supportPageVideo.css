@@ -1,0 +1,161 @@
+.support-video {
+  width: 27em;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  z-index: 2;
+}
+
+.support-video-bg {
+  position: absolute;
+  left: 0.75em;
+  top: 4em;
+  width: 24em;
+  height: 18em;
+  background-image: url(/assets/images/support_page/animation/TV_frame.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.support-video-bg.openbg {
+  animation: opaVideoSupport 2s ease;
+  opacity: 1;
+}
+
+.suppurt-video-pedestal {
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+  left: -0.5em;
+  bottom: 5em;
+  background-image: url(/assets/images/support_page/animation/Light_pedestal.png);
+  transform: rotate(180deg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.suppurt-video-pedestal.openPed {
+  animation: opaPedestrial 2s ease;
+  opacity: 1;
+}
+
+.support-video-loader {
+  width: 15em;
+  height: 8em;
+  background: url(/assets/images/support_page/animation/Cyber_loader.gif);
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0;
+  left: 5.5em;
+  opacity: 1;
+  pointer-events: none;
+  transform: translateY(-100%) scale(0);
+  transition: transform 0.5s ease, opacity 0.5s ease, background 0.1s ease;
+}
+
+.support-video-loader.background {
+  background: url(/assets/images/support_page/animation/Loader_final_frame.png);
+  background-size: 100% 100%;
+}
+
+.support-video-loader.play {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.support-video-video {
+  position: absolute;
+  width: 17.2em;
+  height: 14.2em;
+  object-fit: fill;
+  left: 2em;
+  top: 6em;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: -1;
+}
+
+.support-video-video.openVi {
+  opacity: 1;
+}
+
+@keyframes opaVideoSupport {
+  0% {
+    transform: translateY(-100%) rotate(15deg);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.4;
+    transform: translateY(30%) rotate(-10deg);
+  }
+
+  80% {
+    opacity: 0.8;
+    transform: translateY(10%) rotate(5deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+  }
+}
+
+@keyframes opaPedestrial {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  22% {
+    opacity: 0;
+  }
+
+  23% {
+    opacity: 0.2;
+  }
+
+  30% {
+    opacity: 0.3;
+  }
+
+  32% {
+    opacity: 0;
+  }
+
+  35% {
+    opacity: 0.35;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  72% {
+    opacity: 0;
+  }
+
+  73% {
+    opacity: 0.7;
+  }
+
+  82% {
+    opacity: 0;
+  }
+
+  83% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

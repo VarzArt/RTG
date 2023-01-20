@@ -1,0 +1,124 @@
+/* MOSCOW-PAGE-NAV-BLOCK-DRINK */
+
+.moscow__block.drink {
+  visibility: hidden;
+}
+
+.moscow__block.drink.chosen {
+  visibility: visible;
+}
+
+.moscow__block.drink::after {
+  content: "";
+  background-image: url(/assets/images/moscow_page/navigation/Nav_item_border.png);
+  background-position: bottom;
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-repeat: no-repeat;
+}
+
+.moscow__drink-title {
+  text-align: end;
+  margin-right: 0.5em;
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+/* MOSCOW-PAGE-NAV-BLOCK-DRINK-LIST */
+
+.magic-list {
+  font-family: "Graphic", sans-serif;
+  font-size: 1.8em;
+  padding: 1em;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.magic-list__item {
+  cursor: none;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  display: block;
+  line-height: 0.9;
+  padding: 1.3em 1.1em;
+  opacity: 0;
+  transition: opacity 0.7s ease 0.5s;
+}
+
+.moscow__block.chosen .magic-list__item {
+  opacity: 1;
+}
+
+#list-item2 {
+  transition-delay: 0.7s;
+}
+
+#list-item3 {
+  transition-delay: 0.9s;
+}
+
+.magic-list__item::after {
+  content: "";
+  margin-top: 0.5em;
+  position: absolute;
+  width: 12.5em;
+  height: 0.1em;
+  background: linear-gradient(to right, #00e1ff, #5676ff, #8407ff, transparent);
+  z-index: -2;
+}
+
+.magic-list__header {
+  width: fit-content;
+  transition: transform 0.7s var(--transition_drink);
+  will-change: transform;
+  padding-left: 1.3em;
+  text-shadow: 1px 1px 2px white, 0 0 1em #64c5eb, 0 0 0.2em #64c5eb;
+}
+
+.magic-list__item:hover .magic-list__header {
+  transform: translate3d(1.3em, 0, 0);
+}
+
+/* MOSCOW-PAGE-NAV-BLOCK-DRINK-LIST-CUSTOM-CURSOR */
+
+.cursor {
+  --width: 7em;
+  --height: 5em;
+  position: fixed;
+  width: var(--width);
+  height: var(--height);
+  top: -9em;
+  left: -9.5em;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate3d(var(--move-x), var(--move-y), 0);
+  transition: transform 2s cubic-bezier(0.1, 0.5, 0, 1), opacity 0.3s ease;
+  will-change: transform;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.cursor__image {
+  position: relative;
+  width: 10em;
+  height: 10em;
+  top: -3em;
+  left: -1.5em;
+  background-size: cover;
+  background-position: center;
+  transform: scale(0);
+  transition: transform 0.5s cubic-bezier(0.1, 0.5, 0, 1);
+}
+
+.magic-list__item:hover .cursor {
+  opacity: 1;
+}
+
+.magic-list__item:hover .cursor__image {
+  transform: scale(1);
+}

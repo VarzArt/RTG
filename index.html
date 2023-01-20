@@ -6,18 +6,31 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="icon" href="/Logos/Logo.png">
+	<link rel="icon" href="/assets/images/Main_logo.png">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="/css/weather.css">
-	<link rel="stylesheet" href="/css/colors.css">
-	<link rel="stylesheet" href="/css/styles_converter/styles.css">
-	<link rel="stylesheet" href="/Libs/swiper/swiper-bundle.min.css">
-	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/preload.css">
+	<link rel="stylesheet" href="/styles/libs/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/styles/main.css">
+	<link rel="stylesheet" href="/styles/header/header.css">
+	<link rel="stylesheet" href="/styles/header/rightMenuJoke.css">
+	<link rel="stylesheet" href="/styles/aboutPage.css">
+	<link rel="stylesheet" href="/styles/moscow_page/moscowMain.css">
+	<link rel="stylesheet" href="/styles/moscow_page/moscowSlider.css">
+	<link rel="stylesheet" href="/styles/moscow_page/moscowHistoryBlock.css">
+	<link rel="stylesheet" href="/styles/moscow_page/moscowWeatherBlock.css">
+	<link rel="stylesheet" href="/styles/moscow_page/moscowDrinkBlock.css">
+	<link rel="stylesheet" href="/styles/cremlin_page/colorsApp.css">
+	<link rel="stylesheet" href="/styles/cremlin_page/cremlinMain.css">
+	<link rel="stylesheet" href="/styles/cremlin_page/cremlinImage.css">
+	<link rel="stylesheet" href="/styles/support_page/supportPageVideo.css">
+	<link rel="stylesheet" href="/styles/support_page/supportPage.css">
+	<link rel="stylesheet" href="/styles/exchange_page/exchangeMain.css">
+	<link rel="stylesheet" href="/styles/exchange_page/exchange_app/exhangeApp.css">
+	<link rel="stylesheet" href="/styles/footer.css">
+	<link rel="stylesheet" href="/styles/preload.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js" integrity="sha512-zInFF17qBFVvvvFpIfeBzo7Tj7+rQxLeTJDmbxjBz5/zIr89YVbTNelNhdTT+/DCrxoVzBeUPVFJsczKbB7sew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -57,14 +70,14 @@
 				<div class="mainPage__header">
 
 					<div class="mainPage__header-logo">
-						<img src="/Logos/Logo.png" alt="Russian Travel Guide logo" id = "logo">
+						<img src="/assets/images/Main_logo.png" alt="Russian Travel Guide logo" id = "logo">
 					</div>
 
 					<div class="mainPage__header-leftMenu">
 						<div class="mainPage__header-leftMenu-item" id = "About_us">/About us</div>
 						<div class="mainPage__header-leftMenu-item" id = "Cities">/Cities</div>
 							<ul class="mainPage__header-leftMenu-submenu">
-								<li class="mainPage__header-leftMenu-submenu-item"><div id="Citi_page">Moscow</div></li>
+								<li class="mainPage__header-leftMenu-submenu-item" id="Citi_page">Moscow</li>
 								<li class="mainPage__header-leftMenu-submenu-item">Lorem.</li>
 								<li class="mainPage__header-leftMenu-submenu-item">Lorem.</li>
 							</ul>
@@ -81,17 +94,17 @@
 
 				<div class="mainPage__joke">
 					<div class="mainPage__joke-steps">
-						<img src="/Images/main_images/steps.png" alt="">
+						<img src="/assets/images/header/Steps.png" alt="">
 					</div>
 					<div class="mainPage__joke-hero">
-						<img src="/Images/main_images/Putin_gop.png" alt="">
+						<img src="/assets/images/header/Putin.png" alt="">
 					</div>
 					<div class="mainPage__joke-popup">
-						<img src="/Images/main_images/popup_right.png" alt="">
+						<img src="/assets/images/header/Popup.png" alt="">
 						<div class="mainPage__joke-popup-text">That one menu <br> is not enough?!</div>
 					</div>
 					<div class="mainPage__joke-arrow">
-						<img src="/Images/main_images/arrow.png" alt="">
+						<img src="/assets/images/header/Header_arrow.png" alt="">
 					</div>
 				</div>
 
@@ -121,7 +134,7 @@
 
 		</div>
 		
-		<video class="mainPage__video" src = "/Backgrounds/Vidios/main-background.mp4" autoplay loop muted disablePictureInPicture></video>
+		<video class="mainPage__video" src = "/assets/videos/main-background.mp4" autoplay loop muted disablePictureInPicture></video>
 
 	</section>
 
@@ -143,18 +156,20 @@
 
 				<button class="about__text-description-button _anim-items _anim-no-hide">Ok, son, try me</button>
 
+				<h1 class="about__text-list_header">/For example:</h1>
+
+				<ul class="about__list">
+					<li class="about__list-item item1" id="Learn">/Learn smthng about motherRUSSIA</li>
+					<li class="about__list-item item2" id="Find">/Find out the weather in the <span>right</span> night city</li>
+					<li class="about__list-item item3" id="Decorate">/Decorate your own Kremlin</li>
+					<li class="about__list-item item4" id="Just">/Just have a fucking good time, yopta!</li>
+				</ul>
+		
+				<p class="about__text-list_footer">And that's not all</p>
+
 		</div>
 
-		<h1 class="about__text-list_header">/For example:</h1>
 
-		<ul class="about__list">
-			<li class="about__list-item item1" id="Learn">/Learn smthng about motherRUSSIA</li>
-			<li class="about__list-item item2" id="Find">/Find out the weather in the <span>right</span> night city</li>
-			<li class="about__list-item item3" id="Decorate">/Decorate your own Kremlin</li>
-			<li class="about__list-item item4" id="Just">/Just have a fucking good time, yopta!</li>
-		</ul>
-
-		<p class="about__text-list_footer">And that's not all</p>
 
 	</section>
 
@@ -178,19 +193,19 @@
 			<div class = "moscow__navigation-item _anim-items _anim-no-hide" id = "moscow-nav-item1">
 				<a href="#"></a>
 					<div class="circle"></div>
-					<img class = "moscow__navigation-item-logo" src="/Logos/hystory_logo.png" alt="">
+					<img class = "moscow__navigation-item-logo" src="/assets/images/moscow_page/navigation/Hystory_logo.png" alt="">
 			</div>
 
 			<div class = "moscow__navigation-item _anim-items _anim-no-hide" id = "moscow-nav-item2">
 				<a href="#"></a>
 				<div class="circle-2"></div>
-					<img class = "moscow__navigation-item-logo" src="/Logos/weather_logo.png" alt="">
+					<img class = "moscow__navigation-item-logo" src="/assets/images/moscow_page/navigation/Weather_logo.png" alt="">
 			</div>
 
 			<div class = "moscow__navigation-item _anim-items _anim-no-hide" id = "moscow-nav-item3">
 				<a href="#"></a>
 				<div class="circle-3"></div>
-					<img class = "moscow__navigation-item-logo" src="/Logos/drink_logo.png" alt="">
+					<img class = "moscow__navigation-item-logo" src="/assets/images/moscow_page/navigation/Drink_logo.png" alt="">
 			</div>
 
 		</div>
@@ -263,21 +278,21 @@
 				<a href="#" class="magic-list__item" id="list-item1">
 					<div class="magic-list__header">Aviator Restaurant</div>
 					<div class="cursor">
-						<div class="cursor__image" style = "background-image:url(/Images/drink_images/1.jpg)"></div>
+						<div class="cursor__image" style = "background-image:url(/assets/images/moscow_page/drink_block/Aviator_photo.jpg)"></div>
 					</div>
 				</a>
 
 				<a href="#" class="magic-list__item" id="list-item2">
 					<div class="magic-list__header">Mendeleev Bar</div>
 					<div class="cursor">
-						<div class="cursor__image" style = "background-image:url(/Images/drink_images/2.jpg)"></div>
+						<div class="cursor__image" style = "background-image:url(/assets/images/moscow_page/drink_block/Mendeleev_photo.jpg)"></div>
 					</div>
 				</a>
 
 				<a href="#" class="magic-list__item" id="list-item3">
 					<div class="magic-list__header">Kotelnaya Bar</div>
 					<div class="cursor">
-						<div class="cursor__image" style = "background-image:url(/Images/drink_images/3.jpg)"></div>
+						<div class="cursor__image" style = "background-image:url(/assets/images/moscow_page/drink_block/Kotelynaya_photo.jpg)"></div>
 					</div>
 				</a>
 
@@ -293,23 +308,23 @@
 				<div class="swiper-wrapper slider__wrapper">
 
 					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/Images/Moscow_gallery_photoes/moscow_photo1.jpg) ;"></div>
+						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo1.jpg) ;"></div>
 					</div>
 
 					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "30%" style="background-image: url(/Images/Moscow_gallery_photoes/moscow_photo2.png) ;"></div>
+						<div class="slider__img" data-swiper-parallax = "30%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo2.png) ;"></div>
 					</div>
 
 					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/Images/Moscow_gallery_photoes/moscow_photo3.jpg) ;"></div>
+						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo3.jpg) ;"></div>
 					</div>
 
 					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "30%" style="background-image: url(/Images/Moscow_gallery_photoes/moscow_photo4.jpg) ;"></div>
+						<div class="slider__img" data-swiper-parallax = "30%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo4.jpg) ;"></div>
 					</div>
 
 					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/Images/Moscow_gallery_photoes/moscow_photo5.jpg) ;"></div>
+						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo5.jpg) ;"></div>
 					</div>
 
 				</div>
@@ -321,23 +336,23 @@
 				<div class="swiper-wrapper slider__wrapper">
 
 					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/Images/Moscow_gallery_photoes/moscow_photo1.jpg) ;"></div>
+						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo1.jpg) ;"></div>
 					</div>
 
 					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "30%" style="background-image: url(/Images/Moscow_gallery_photoes/moscow_photo2.png) ;"></div>
+						<div class="slider__img" data-swiper-parallax = "30%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo2.png) ;"></div>
 					</div>
 
 					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/Images/Moscow_gallery_photoes/moscow_photo3.jpg) ;"></div>
+						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo3.jpg) ;"></div>
 					</div>
 
 					<div class="swiper-slide slider__item">/Images/Moscow_gallery_photoes/moscow_photo1.jpg
-						<div class="slider__img" data-swiper-parallax = "30%" style="background-image: url(/Images/Moscow_gallery_photoes/moscow_photo4.jpg) ;"></div>
+						<div class="slider__img" data-swiper-parallax = "30%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo4.jpg) ;"></div>
 					</div>
 
 					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/Images/Moscow_gallery_photoes/moscow_photo5.jpg) ;"></div>
+						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo5.jpg) ;"></div>
 					</div>
 
 				</div>
@@ -357,7 +372,7 @@
 
 	<section class="cremlin" id="playPage">
 
-		<h1 class="cremlin-title _anim-items _anim-no-hide">/If you wanna play, let's play*</h1>
+		<div class="cremlin-title _anim-items _anim-no-hide">/If you wanna play, let's play*</div>
 
 		<p class="cremlin-title-desc _anim-items _anim-no-hide">(*Press the space bar to see the magic)</p>
 
@@ -416,46 +431,47 @@
 		</div>
 
 		<div class="cremlin__image _anim-items _anim-no-hide">
+			<div class="cremlim__image-full">
+				
+				<div class="cremlin__image-pick">
+					<p class="cremlin__image-pick-element"></p>
+					<p class="cremlin__image-pick-element"></p>
+					<p class="cremlin__image-pick-element"></p>
+				</div>
 
-			<div class="cremlin__image-left">
-				<p class="cremlin__image-left-element"></p>
-				<p class="cremlin__image-left-element"></p>
-				<p class="cremlin__image-left-element"></p>
-				<p class="cremlin__image-left-element"></p>
-				<p class="cremlin__image-left-element"></p>
+				<div class="cremlin__image-clock">
+					<p class="cremlin__image-clock-element"></p>
+					<p></p>
+				</div>
+
+				<div class="cremlin__image-top">
+					<p class="cremlin__image-top-element"></p>
+					<p class="cremlin__image-top-element"></p>
+				</div>
+				<div class="bottom-cremlin">
+					<div class="cremlin__image-left">
+						<p class="cremlin__image-left-element"></p>
+						<p class="cremlin__image-left-element"></p>
+						<p class="cremlin__image-left-element"></p>
+						<p class="cremlin__image-left-element"></p>
+						<p class="cremlin__image-left-element"></p>
+					</div>
+
+					<div class="cremlin__image-center">
+						<p class="cremlin__image-center-element"></p>
+						<p class="cremlin__image-center-element"></p>
+					</div>
+
+					<div class="cremlin__image-right">
+						<p class="cremlin__image-right-element"></p>
+						<p class="cremlin__image-right-element"></p>
+						<p class="cremlin__image-right-element"></p>
+						<p class="cremlin__image-right-element"></p>
+						<p class="cremlin__image-right-element"></p>
+					</div>
+				</div>
 			</div>
-
-			<div class="cremlin__image-right">
-				<p class="cremlin__image-right-element"></p>
-				<p class="cremlin__image-right-element"></p>
-				<p class="cremlin__image-right-element"></p>
-				<p class="cremlin__image-right-element"></p>
-				<p class="cremlin__image-right-element"></p>
-			</div>
-
-			<div class="cremlin__image-center">
-				<p class="cremlin__image-center-element"></p>
-				<p class="cremlin__image-center-element"></p>
-			</div>
-
-			<div class="cremlin__image-top">
-				<p class="cremlin__image-top-element"></p>
-				<p class="cremlin__image-top-element"></p>
-			</div>
-
-			<div class="cremlin__image-pick">
-				<p class="cremlin__image-pick-element"></p>
-				<p class="cremlin__image-pick-element"></p>
-				<p class="cremlin__image-pick-element"></p>
-			</div>
-
-			<div class="cremlin__image-clock">
-				<p class="cremlin__image-clock-element"></p>
-				<p></p>
-			</div>
-
 		</div>
-		
 	</section>
 
 
@@ -469,9 +485,10 @@
 			<div class="support-video-bg"></div>
 			<div class="suppurt-video-pedestal"></div>
 			<div class="support-video-loader"></div>
+			<video src="/assets/videos/support_background.mp4" class="support-video-video" loop muted disablePictureInPicture></video>
 		</div>
 		<div class="support__text">
-			<h1 class="support__text-title _anim-items _anim-no-hide">/You may <span>ask</span> why only one city</h1>
+			<div class="support__text-title _anim-items _anim-no-hide">/You may <span>ask</span> why only one city</div>
 			<div class="support__text-subtitle">Well, a reasonable question</div>
 			<div class="support__text-content">
 				<div class="support__text-content-title">I answer...</div>
@@ -487,7 +504,7 @@
 			</div>
 		</div>
 
-		<video src="/Backgrounds/Vidios/support_background.mp4" class="support-video-video" loop muted disablePictureInPicture></video>
+		
 
 	</section>
 
@@ -498,11 +515,11 @@
 			<div class="changer-text__title _anim-items _anim-no-hide">You know, I liked you, really liked you</div>
 			<div class="changer-text__subtitile _anim-items _anim-no-hide">And I want to give you a small handy <span>tool</span></div>
 			<span class="changer-text__click _anim-items _anim-no-hide">Click this shit!</span>
-			<div class="changer-text__name">/Currency exchanger!</div>
 		</div>
+		<div class="changer-text__name">/Currency exchanger!</div>
 
 		<div class="changer-app _anim-items _anim-no-hide">
-			<main>
+
 			<div class="container_app">
 
         <div class="main">
@@ -510,14 +527,14 @@
             <div class="tabs">
               <div class="tab active" data-tab="convert">
                 <div class="tab-icon">
-                  <img src="./Images/Convert_images/convert.svg" alt="" />
+                  <img src="./assets/images/exchange_page/exchange_app/convert.svg" alt="" />
                 </div>
                 <div class="tab-title">Convert</div>
               </div>
 
               <div class="tab" data-tab="single">
                 <div class="tab-icon">
-                  <img src="./Images/Convert_images/single.svg" alt="" />
+                  <img src="./assets/images/exchange_page/exchange_app/single.svg" alt="" />
                 </div>
                 <div class="tab-title">Single</div>
               </div>
@@ -548,7 +565,7 @@
                     </div>
 
                     <div class="form-select__icon switch-currencies">
-                      <img src="./Images/Convert_images/arrows.png" alt="" />
+                      <img src="./assets/images/exchange_page/exchange_app/arrows.png" alt="" />
                     </div>
 
                     <div class="form-select">
@@ -573,7 +590,7 @@
                     <div class="form-result__item from" id="resultFrom"></div>
 
                     <div class="form-result__equals">
-                      <img src="./Images/Convert_images/equals.svg" alt="" />
+                      <img src="./assets/images/exchange_page/exchange_app/equals.svg" alt="" />
                     </div>
 
                     <div class="form-result__item to" id="resultTo"></div>
@@ -617,7 +634,7 @@
           </div>
         </div>
       </div>
-		</main>
+
 		</div>
 	</section>
 
@@ -625,7 +642,7 @@
 
 	<section class="footer _anim-items _anim-no-hide">
 
-		<video class="mainPage__video-footer _anim-items _anim-no-hide" src = "/Backgrounds/Vidios/main-background.mp4" autoplay loop muted disablePictureInPicture></video>
+		<video class="mainPage__video-footer _anim-items _anim-no-hide" src = "/assets/videos/main-background.mp4" autoplay loop muted disablePictureInPicture></video>
 
 		<div class="footer-logo _anim-items _anim-no-hide"></div>
 			<div class="footer__text-title _anim-items _anim-no-hide">Russuan Tourist Guide</div>
@@ -640,11 +657,20 @@
 
 	</section>
 
-	<script type="module" src="./js/js_app/index.js"></script>
-	<script type="module" src="./js/js_app/events.js"></script>
-	<script src="/js/colors.js"></script>
-	<script src="/js/weather.js"></script>
-	<script src="/Libs/swiper/swiper-bundle.min.js"></script>
-	<script src="/js/app.js"></script>
+	<script src="/scripts/moscow_page/swiper-bundle.min.js"></script>
+	<script src="/scripts/basic_settings/preloader.js"></script>
+	<script src="/scripts/basic_settings/main.js"></script>
+	<script src="/scripts/basic_settings/scrolls.js"></script>
+	<script src="/scripts/header_animation.js"></script>
+	<script src="/scripts/about_page_button.js"></script>
+	<script src="/scripts/moscow_page/moscow_page_weather_app.js"></script>
+	<script src="/scripts/moscow_page/moscow_page_nav&cursor.js"></script>
+	<script src="/scripts/moscow_page/moscow_page_slider.js"></script>
+	<script src="/scripts/moscow_page/moscow_page_gallery.js"></script>
+	<script src="/scripts/game_colors_page.js"></script>
+	<script src="/scripts/support_page_animation.js"></script>
+	<script src="/scripts/exchange_page/exchange_main.js"></script>
+	<script type="module" src="./scripts/exchange_page/exhcange_app/index.js"></script>
+	<script type="module" src="./scripts/exchange_page/exhcange_app/events.js"></script>
 </body>
 </html>

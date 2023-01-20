@@ -1,0 +1,367 @@
+/* CREMLIN-IMAGE */
+
+.cremlin__image {
+  opacity: 0;
+  transition: opacity 2s ease-in;
+  width: 27rem;
+  height: 24.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cremlim__image-full {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: max-content;
+  width: max-content;
+  align-items: center;
+}
+
+.cremlin__image._active {
+  opacity: 1;
+}
+
+.bottom-cremlin {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: max-content;
+}
+
+/* CREMLIN-IMAGE-LEFT-BLOCK */
+
+.cremlin__image-left {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+}
+
+.cremlin__image-left::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 110%;
+  background-image: url(/assets/images/game_page/Blocks.png);
+  background-position: center;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+}
+
+.cremlin__image-left::before {
+  position: absolute;
+  content: "";
+  width: 6rem;
+  height: 6.8rem;
+  background-image: url(/assets/images/game_page/Putin_stencil.png);
+  background-position: center;
+  background-size: cover;
+  bottom: 0.5rem;
+  left: 2rem;
+  z-index: 2;
+}
+
+.cremlin__image-left-element:first-child,
+.cremlin__image-left-element:nth-child(3) {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 0;
+  top: -1rem;
+}
+
+.cremlin__image-left-element:nth-child(3) {
+  left: 5rem;
+}
+
+.cremlin__image-left-element:nth-child(2) {
+  position: absolute;
+  width: 10.5rem;
+  bottom: 0;
+  height: 8rem;
+  left: 0;
+}
+
+.cremlin__image-left-element:nth-child(4),
+.cremlin__image-left-element:nth-child(5) {
+  width: 0;
+  height: 0;
+  border-left: 1.5rem solid transparent;
+  border-right: 1.5rem solid transparent;
+  border-top: 2rem solid black;
+  background: none !important;
+  position: absolute;
+  left: 0;
+  top: -1rem;
+}
+
+.cremlin__image-left-element:nth-child(5) {
+  left: 5rem;
+}
+
+/* CREMLIN-IMAGE-CENTER-BLOCK */
+
+.cremlin__image-center {
+  position: relative;
+  width: 12em;
+  height: 12.3em;
+}
+
+.cremlin__image-center::after {
+  position: absolute;
+  content: "";
+  width: 12em;
+  height: 12.3em;
+  background-image: url(/assets/images/game_page/Center_windows.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 1.9rem;
+  left: 0;
+  z-index: 5;
+}
+
+.cremlin__image-center::before {
+  position: absolute;
+  content: "";
+  width: 5em;
+  height: 5em;
+  background-image: url(/assets/images/game_page/Center_door.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+.cremlin__image-center-element:first-child,
+.cremlin__image-center-element:last-child {
+  position: absolute;
+  width: 12em;
+  height: 2em;
+  bottom: 0;
+  left: 0;
+  border-right: 0.3rem solid black;
+  border-left: 0.3rem solid black;
+  border-top: 0.3rem solid black;
+}
+
+.cremlin__image-center-element:first-child {
+  z-index: 3;
+  border-top: none;
+}
+
+.cremlin__image-center-element:last-child {
+  bottom: 2em;
+  height: 10.3em;
+  z-index: 2;
+}
+
+/* CREMLIN-IMAGE-RIGHT-BLOCK */
+
+.cremlin__image-right {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+}
+
+.cremlin__image-right::after {
+  position: absolute;
+  content: "";
+  width: 110%;
+  height: 110%;
+  background-image: url(/assets/images/game_page/Blocks.png);
+  background-position: center;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+}
+
+.cremlin__image-right::before {
+  background-image: url(/assets/images/game_page/Bodrov_stencil.png);
+  position: absolute;
+  content: "";
+  width: 6rem;
+  height: 6.8rem;
+  background-position: center;
+  background-size: cover;
+  bottom: 0.5rem;
+  left: 2rem;
+  z-index: 2;
+}
+
+.cremlin__image-right-element:first-child,
+.cremlin__image-right-element:nth-child(3) {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  right: 0;
+  top: -1rem;
+}
+
+.cremlin__image-right-element:nth-child(3) {
+  right: 5em;
+}
+
+.cremlin__image-right-element:nth-child(2) {
+  position: absolute;
+  width: 10.5rem;
+  bottom: 0;
+  height: 8rem;
+  right: 0;
+}
+
+.cremlin__image-right-element:nth-child(5),
+.cremlin__image-right-element:nth-child(4) {
+  width: 0;
+  height: 0;
+  border-left: 1.5rem solid transparent;
+  border-right: 1.5rem solid transparent;
+  border-top: 2rem solid black;
+  background: none !important;
+  position: absolute;
+  right: 0;
+  top: -1rem;
+}
+
+.cremlin__image-right-element:nth-child(5) {
+  right: 5em;
+}
+
+/* CREMLIN-IMAGE-TOP-BLOCK */
+
+.cremlin__image-top {
+  position: relative;
+  width: 8.5em;
+  height: 12.5em;
+}
+
+.cremlin__image-top::after {
+  position: absolute;
+  content: "";
+  width: 6.5em;
+  height: 6em;
+  background-image: url(/assets/images/game_page/Top_pattern.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  bottom: 6.5em;
+  left: 1em;
+}
+
+.cremlin__image-top::before {
+  position: absolute;
+  content: "";
+  width: 8.5em;
+  height: 5.5em;
+  background-image: url(/assets/images/game_page/Top_clock_pattern.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  bottom: 0.5em;
+  left: 0;
+  z-index: 1;
+}
+
+.cremlin__image-top-element:first-child {
+  position: absolute;
+  width: 8.5em;
+  height: 6.5em;
+  bottom: 0;
+  left: 0;
+  border-top: 0.3em solid black;
+}
+
+.cremlin__image-top-element:last-child {
+  position: absolute;
+  width: 6.5em;
+  height: 6em;
+  bottom: 6.5em;
+  left: 1em;
+  border-top: 0.3em solid black;
+}
+
+/* CREMLIN-IMAGE-PICK-BLOCK */
+
+.cremlin__image-pick {
+  position: relative;
+  width: 4em;
+  height: 9em;
+}
+
+.cremlin__image-pick::after {
+  position: absolute;
+  content: "";
+  width: 4em;
+  height: 5em;
+  background-image: url(/assets/images/game_page/Top_windows.png);
+  background-position: center;
+  background-size: 20% 100%;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+}
+
+.cremlin__image-pick-element:first-child {
+  position: absolute;
+  width: 4em;
+  height: 9em;
+  bottom: 0;
+  left: 0;
+}
+
+.cremlin__image-pick-element:nth-child(2) {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 9em solid black;
+  border-left: 2em solid transparent;
+  background: none !important;
+  bottom: 0;
+  right: 0;
+}
+
+.cremlin__image-pick-element:last-child {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 9em solid black;
+  border-right: 2em solid transparent;
+  background: none !important;
+  bottom: 0;
+  left: 0;
+}
+
+/* CREMLIN-IMAGE-CLOCK-BLOCK */
+
+.cremlin__image-clock {
+  position: relative;
+}
+
+.cremlin__image-clock > * {
+  z-index: 2;
+}
+
+.cremlin__image-clock-element {
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  bottom: -11.75em;
+  left: -2.5em;
+  border-radius: 50%;
+}
+
+.cremlin__image-clock-element::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(/assets/images/game_page/Clock_dial.png);
+  background-position: center;
+  background-size: cover;
+}
