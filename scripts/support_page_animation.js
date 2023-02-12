@@ -12,6 +12,7 @@ const supportContentSubtitle = document.querySelector(
   ".support__text-content-subtitle"
 );
 const supportContent = document.querySelector(".support__text-content-social");
+const supportVideo = document.querySelector(".support-video-video");
 
 supportTitleSpan.addEventListener("click", () => {
   supportSubtitle.classList.add("clicked");
@@ -31,14 +32,8 @@ supportPlayButton.addEventListener("click", () => {
   }, 2800);
 });
 
-const startVideo = async () => {
-  const supportVideo = document.querySelector(".support-video-video");
-
-  try {
-    await supportVideo.play();
-    supportVideo.setAttribute("autoplay", true);
-    supportVideo.classList.add("openVi");
-  } catch (err) {
-    console.log(err, "video play error");
-  }
+const startVideo = () => {
+  supportVideo.play();
+  supportVideo.setAttribute("autoplay", true);
+  supportVideo.classList.add("openVi");
 };

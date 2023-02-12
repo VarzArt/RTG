@@ -1,11 +1,10 @@
 /* MOSCOW-PAGE-GALLERY-SLIDER */
 
 .slider {
-  height: 100%;
   transform: rotate(15deg);
   overflow: visible;
-  top: 1em;
-  margin-top: 5em;
+  height: 95%;
+  margin-top: 5.5em;
 }
 
 .slider__wrapper {
@@ -50,23 +49,29 @@
 
 .slider-prev-item {
   position: absolute;
-  bottom: 0;
+  bottom: -1.5vh;
   left: 17%;
   height: 13%;
   width: 13%;
   background: url(/assets/images/moscow_page/swiper/Left-arrow.png);
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.3;
+  opacity: 0.8;
   transform: scale(0.7);
   z-index: 999;
   transition: all 0.2s ease;
   cursor: pointer;
 }
+@media screen and (max-width: 900px) {
+  .slider-prev-item {
+    bottom: 0;
+    left: 5%;
+  }
+}
 
 .slider-prev-item:hover,
 .slider-next-item:hover {
-  opacity: 0.7;
+  opacity: 1;
   transform: scale(1);
   filter: drop-shadow(1px 1px 2px white) drop-shadow(0 0 1em #64c5eb)
     drop-shadow(0 0 0.2em #64c5eb);
@@ -74,18 +79,24 @@
 
 .slider-next-item {
   position: absolute;
-  top: 0;
-  right: 22%;
+  bottom: -1.5vh;
+  left: 29%;
   height: 13%;
   width: 13%;
   background: url(/assets/images/moscow_page/swiper/Right-arrow.png);
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.3;
+  opacity: 0.8;
   transform: scale(0.7);
   transition: all 0.2s ease;
   cursor: pointer;
   z-index: 4;
+}
+@media screen and (max-width: 900px) {
+  .slider-next-item {
+    bottom: 0;
+    left: 17%;
+  }
 }
 
 .slider__navigation > *.swiper-button-disabled {
@@ -120,6 +131,12 @@
   z-index: 999;
   transition: opacity 0.3s ease;
   box-shadow: 0 0 2em #64c5eb, 0 0 0.4em #64c5eb;
+}
+@media screen and (max-width: 900px) {
+  .modal {
+    width: 80%;
+    height: 40%;
+  }
 }
 
 .modal img {

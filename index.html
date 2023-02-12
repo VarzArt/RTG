@@ -1,676 +1,899 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel="icon" href="/assets/images/Main_logo.png">
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
-
-	<link rel="stylesheet" href="/styles/libs/swiper-bundle.min.css">
-	<link rel="stylesheet" href="/styles/main.css">
-	<link rel="stylesheet" href="/styles/header/header.css">
-	<link rel="stylesheet" href="/styles/header/rightMenuJoke.css">
-	<link rel="stylesheet" href="/styles/aboutPage.css">
-	<link rel="stylesheet" href="/styles/moscow_page/moscowMain.css">
-	<link rel="stylesheet" href="/styles/moscow_page/moscowSlider.css">
-	<link rel="stylesheet" href="/styles/moscow_page/moscowHistoryBlock.css">
-	<link rel="stylesheet" href="/styles/moscow_page/moscowWeatherBlock.css">
-	<link rel="stylesheet" href="/styles/moscow_page/moscowDrinkBlock.css">
-	<link rel="stylesheet" href="/styles/cremlin_page/colorsApp.css">
-	<link rel="stylesheet" href="/styles/cremlin_page/cremlinMain.css">
-	<link rel="stylesheet" href="/styles/cremlin_page/cremlinImage.css">
-	<link rel="stylesheet" href="/styles/support_page/supportPageVideo.css">
-	<link rel="stylesheet" href="/styles/support_page/supportPage.css">
-	<link rel="stylesheet" href="/styles/exchange_page/exchangeMain.css">
-	<link rel="stylesheet" href="/styles/exchange_page/exchange_app/exhangeApp.css">
-	<link rel="stylesheet" href="/styles/footer.css">
-	<link rel="stylesheet" href="/styles/preload.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js" integrity="sha512-zInFF17qBFVvvvFpIfeBzo7Tj7+rQxLeTJDmbxjBz5/zIr89YVbTNelNhdTT+/DCrxoVzBeUPVFJsczKbB7sew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://kit.fontawesome.com/6808a3d275.js" crossorigin="anonymous"></script>
-
-	<title>RTG</title>
-
-</head>
-
-<body>
-
-
-
-	<section class="preloader" id = "page-preloader">
-
-		<div id="loading">
-
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-
-			<div class="text">Loading...</div>
-
-		</div>
-
-	</section>
-
-
-
-	<section class="mainPage" id="mainPage">
-
-		<div class="mainPage__background">
-
-			<div class="container_main">
-
-				<div class="mainPage__header">
-
-					<div class="mainPage__header-logo">
-						<img src="/assets/images/Main_logo.png" alt="Russian Travel Guide logo" id = "logo">
-					</div>
-
-					<div class="mainPage__header-leftMenu">
-						<div class="mainPage__header-leftMenu-item" id = "About_us">/About us</div>
-						<div class="mainPage__header-leftMenu-item" id = "Cities">/Cities</div>
-							<ul class="mainPage__header-leftMenu-submenu">
-								<li class="mainPage__header-leftMenu-submenu-item" id="Citi_page">Moscow</li>
-								<li class="mainPage__header-leftMenu-submenu-item">Lorem.</li>
-								<li class="mainPage__header-leftMenu-submenu-item">Lorem.</li>
-							</ul>
-						<div class="mainPage__header-leftMenu-item" id = "Gallery">/Let's play</div>
-						<div class="mainPage__header-leftMenu-item" id = "Support">/Support</div>
-					</div>
-
-					<div class="mainPage__header-rightMenu">
-						<div class="mainPage__header-rightMenu-name">RTG</div>
-						<div class="mainPage__header-rightMenu-logo"></div>
-					</div>
-
-				</div>
-
-				<div class="mainPage__joke">
-					<div class="mainPage__joke-steps">
-						<img src="/assets/images/header/Steps.png" alt="">
-					</div>
-					<div class="mainPage__joke-hero">
-						<img src="/assets/images/header/Putin.png" alt="">
-					</div>
-					<div class="mainPage__joke-popup">
-						<img src="/assets/images/header/Popup.png" alt="">
-						<div class="mainPage__joke-popup-text">That one menu <br> is not enough?!</div>
-					</div>
-					<div class="mainPage__joke-arrow">
-						<img src="/assets/images/header/Header_arrow.png" alt="">
-					</div>
-				</div>
-
-				<div class="mainPage__info" id = "info">
-
-					<div class="mainPage__info-header" id = "infoHeader">/Russian Travel Guide</div>
-					<p class="mainPage__info-desc" id = "infoDesc">We will break your <span class="mainPage__info-des-span">stereotypes</span> about Russia</p>
-
-					<div class="mainPage__info-button" id = "infoButton">
-						<span style="--i:1">L</span>
-						<span style="--i:2">e</span>
-						<span style="--i:3">t</span>
-						<span style="--i:4">'</span>
-						<span style="--i:5">s</span>
-						<span style="--i:6">g</span>
-						<span style="--i:7">o</span>
-						<span style="--i:8">s</span>
-						<span style="--i:9">u</span>
-						<span style="--i:10">k</span>
-						<span style="--i:11">a</span>
-						<span style="--i:12">!</span>
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-		
-		<video class="mainPage__video" src = "/assets/videos/main-background.mp4" autoplay loop muted disablePictureInPicture></video>
-
-	</section>
-
-
-
-	<section class="about" id="aboutPage">
-
-		<div class="about__background _anim-items _anim-no-hide"></div>
-
-		<div class="about__text">
-
-			<div class="about__text-title _anim-items _anim-no-hide" id = "text-title">
-				/So, boys, what are we going to do here?
-			</div>
-
-			<div class="about__text-description _anim-items _anim-no-hide" id = "text-description">
-				Actually, a lot of...
-			</div>
-
-				<button class="about__text-description-button _anim-items _anim-no-hide">Ok, son, try me</button>
-
-				<h1 class="about__text-list_header">/For example:</h1>
-
-				<ul class="about__list">
-					<li class="about__list-item item1" id="Learn">/Learn smthng about motherRUSSIA</li>
-					<li class="about__list-item item2" id="Find">/Find out the weather in the <span>right</span> night city</li>
-					<li class="about__list-item item3" id="Decorate">/Decorate your own Kremlin</li>
-					<li class="about__list-item item4" id="Just">/Just have a fucking good time, yopta!</li>
-				</ul>
-		
-				<p class="about__text-list_footer">And that's not all</p>
-
-		</div>
-
-
-
-	</section>
-
-
-
-	<section class="moscow" id="cityPage">
-
-		<div class="overlay"></div>
-
-		<div class="modal">
-			<img src="" alt="" class="modal__img">
-		</div>
-
-		<div class="moscow__title">
-			<div class="moscow__title-text _anim-items _anim-no-hide">/Let's start with Default-city </div>
-			<p class="_anim-items _anim-no-hide _anim-no-hide">Moscow</p>
-		</div>
-
-		<div class="moscow__navigation">
-
-			<div class = "moscow__navigation-item _anim-items _anim-no-hide" id = "moscow-nav-item1">
-				<a href="#"></a>
-					<div class="circle"></div>
-					<img class = "moscow__navigation-item-logo" src="/assets/images/moscow_page/navigation/Hystory_logo.png" alt="">
-			</div>
-
-			<div class = "moscow__navigation-item _anim-items _anim-no-hide" id = "moscow-nav-item2">
-				<a href="#"></a>
-				<div class="circle-2"></div>
-					<img class = "moscow__navigation-item-logo" src="/assets/images/moscow_page/navigation/Weather_logo.png" alt="">
-			</div>
-
-			<div class = "moscow__navigation-item _anim-items _anim-no-hide" id = "moscow-nav-item3">
-				<a href="#"></a>
-				<div class="circle-3"></div>
-					<img class = "moscow__navigation-item-logo" src="/assets/images/moscow_page/navigation/Drink_logo.png" alt="">
-			</div>
-
-		</div>
-
-		
-
-		<div class="moscow__block hystory _anim-items _anim-no-hide" id = "hystory">
-
-			<div class="moscow__hystory-title">A little bit history</div>
-
-			<div class="moscow-history-desc">
-				<p id="p1">Moscow is a capital of Russia(Great Britain, hehe)</p>
-				<p id="p2">Was founded in 1147</p>
-				<p id="p3">Square - 2561,5 км²</p>
-				<p id="p4">Population - 13 010 112 people</p>
-				<p id="p5">Time zone - UTC +3</p>
-				<p id="p6">Interesting fact:</p>
-				<p id="p7">*At the moment, native Muscovites are only 2% of the total population</p>
-			</div>
-
-		</div>
-
-		<div class="moscow__block weather _anim-items _anim-no-hide chosen" id = "weather">
-
-			<h1 class="moscow__weather-title">Weather today</h1>
-
-			<div id="app">
-				<div id="root"></div>
-	
-				<div class="popup" id="popup">
-
-					<form action="GET" class="form-weather" id="form">
-
-						<div class="form-weather-group">
-							<input
-								type="text"
-								value=""
-								name="city"
-								class="form-weather-input"
-								id="text-input"
-								placeholder="London"
-								required
-							/>
-							<input
-								type="submit"
-								class="form-weather-submit"
-								id="submit-button"
-								value="OK"
-							/>
-						</div>
-
-					</form>
-	
-					<div class="popup-close" id="close">
-						<span></span>
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="moscow__block drink _anim-items _anim-no-hide" id = "drink">
-
-			<h1 class="moscow__drink-title">Top 3 places to drink</h1>
-
-			<div class="magic-list">
-
-				<a href="#" class="magic-list__item" id="list-item1">
-					<div class="magic-list__header">Aviator Restaurant</div>
-					<div class="cursor">
-						<div class="cursor__image" style = "background-image:url(/assets/images/moscow_page/drink_block/Aviator_photo.jpg)"></div>
-					</div>
-				</a>
-
-				<a href="#" class="magic-list__item" id="list-item2">
-					<div class="magic-list__header">Mendeleev Bar</div>
-					<div class="cursor">
-						<div class="cursor__image" style = "background-image:url(/assets/images/moscow_page/drink_block/Mendeleev_photo.jpg)"></div>
-					</div>
-				</a>
-
-				<a href="#" class="magic-list__item" id="list-item3">
-					<div class="magic-list__header">Kotelnaya Bar</div>
-					<div class="cursor">
-						<div class="cursor__image" style = "background-image:url(/assets/images/moscow_page/drink_block/Kotelynaya_photo.jpg)"></div>
-					</div>
-				</a>
-
-			</div>
-
-		</div>
-
-
-		<div class="moscow__gallery _anim-items _anim-no-hide">
-
-			<div class="swiper slider slider_main">
-
-				<div class="swiper-wrapper slider__wrapper">
-
-					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo1.jpg) ;"></div>
-					</div>
-
-					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "30%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo2.png) ;"></div>
-					</div>
-
-					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo3.jpg) ;"></div>
-					</div>
-
-					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "30%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo4.jpg) ;"></div>
-					</div>
-
-					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo5.jpg) ;"></div>
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="swiper slider slider_bg">
-
-				<div class="swiper-wrapper slider__wrapper">
-
-					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo1.jpg) ;"></div>
-					</div>
-
-					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "30%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo2.png) ;"></div>
-					</div>
-
-					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo3.jpg) ;"></div>
-					</div>
-
-					<div class="swiper-slide slider__item">/Images/Moscow_gallery_photoes/moscow_photo1.jpg
-						<div class="slider__img" data-swiper-parallax = "30%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo4.jpg) ;"></div>
-					</div>
-
-					<div class="swiper-slide slider__item">
-						<div class="slider__img" data-swiper-parallax = "20%" style="background-image: url(/assets/images/moscow_page/swiper/Swiper_photo5.jpg) ;"></div>
-					</div>
-
-				</div>
-
-			</div>
-
-			<div class="slider__navigation">
-				<div class="slider-next-item"></div>
-				<div class="slider-prev-item"></div>
-			</div>
-
-		</div>
-
-	</section>
-	
-	
-
-	<section class="cremlin" id="playPage">
-
-		<div class="cremlin-title _anim-items _anim-no-hide">/If you wanna play, let's play*</div>
-
-		<p class="cremlin-title-desc _anim-items _anim-no-hide">(*Press the space bar to see the magic)</p>
-
-		<div class="color__app _anim-items _anim-no-hide">
-
-			<div class="color__app-background"></div>
-
-			<div class="column">
-				<h2 data-type = "copy"></h2>
-		
-				<button data-type = "lock">
-					<i class="fa-solid fa-lock-open" data-type = "lock"></i>
-				</button>
-			</div>
-		
-			<div class="column">
-				<h2 data-type = "copy"></h2>
-		
-				<button data-type = "lock">
-					<i class="fa-solid fa-lock-open" data-type = "lock"></i>
-				</button>
-			</div>
-		
-			<div class="column">
-				<h2 data-type = "copy"></h2>
-		
-				<button data-type = "lock">
-					<i class="fa-solid fa-lock-open" data-type = "lock"></i>
-				</button>
-			</div>
-		
-			<div class="column">
-				<h2 data-type = "copy"></h2>
-		
-				<button data-type = "lock">
-					<i class="fa-solid fa-lock-open" data-type = "lock"></i>
-				</button>
-			</div>
-		
-			<div class="column">
-				<h2 data-type = "copy"></h2>
-		
-				<button data-type = "lock">
-					<i class="fa-solid fa-lock-open" data-type = "lock"></i>
-				</button>
-			</div>
-
-			<div class="column" id = 'last'>
-				<h2 data-type = "copy"></h2>
-		
-				<button data-type = "lock">
-					<i class="fa-solid fa-lock-open" data-type = "lock"></i>
-				</button>
-			</div>
-
-		</div>
-
-		<div class="cremlin__image _anim-items _anim-no-hide">
-			<div class="cremlim__image-full">
-				
-				<div class="cremlin__image-pick">
-					<p class="cremlin__image-pick-element"></p>
-					<p class="cremlin__image-pick-element"></p>
-					<p class="cremlin__image-pick-element"></p>
-				</div>
-
-				<div class="cremlin__image-clock">
-					<p class="cremlin__image-clock-element"></p>
-					<p></p>
-				</div>
-
-				<div class="cremlin__image-top">
-					<p class="cremlin__image-top-element"></p>
-					<p class="cremlin__image-top-element"></p>
-				</div>
-				<div class="bottom-cremlin">
-					<div class="cremlin__image-left">
-						<p class="cremlin__image-left-element"></p>
-						<p class="cremlin__image-left-element"></p>
-						<p class="cremlin__image-left-element"></p>
-						<p class="cremlin__image-left-element"></p>
-						<p class="cremlin__image-left-element"></p>
-					</div>
-
-					<div class="cremlin__image-center">
-						<p class="cremlin__image-center-element"></p>
-						<p class="cremlin__image-center-element"></p>
-					</div>
-
-					<div class="cremlin__image-right">
-						<p class="cremlin__image-right-element"></p>
-						<p class="cremlin__image-right-element"></p>
-						<p class="cremlin__image-right-element"></p>
-						<p class="cremlin__image-right-element"></p>
-						<p class="cremlin__image-right-element"></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-
-	<section class="support" id="supportPage">
-		<div class="support-video">
-			<div class="support-video-button">
-				<div class="support-video-button-btn _anim-items _anim-no-hide"></div>
-				<div class="support-video-button-text">Somehow we live like this</div>
-			</div>
-			<div class="support-video-bg"></div>
-			<div class="suppurt-video-pedestal"></div>
-			<div class="support-video-loader"></div>
-			<video src="/assets/videos/support_background.mp4" class="support-video-video" loop muted disablePictureInPicture></video>
-		</div>
-		<div class="support__text">
-			<div class="support__text-title _anim-items _anim-no-hide">/You may <span>ask</span> why only one city</div>
-			<div class="support__text-subtitle">Well, a reasonable question</div>
-			<div class="support__text-content">
-				<div class="support__text-content-title">I answer...</div>
-				<div class="support__text-content-subtitle">You can support me on social networks and your city will appear soon!</div>
-				<div class="support__text-content-social">
-					<a href="https://github.com/VarzArt" class="support__text-content-social-github"></a>
-					<a href="https://instagram.com/varzart?igshid=YmMyMTA2M2Y=" class="support__text-content-social-insta"></a>
-					<a href="https://t.me/s/russia" class="support__text-content-social-tg"></a>
-					<span id="github">gitHub</span>
-					<span id="insta">Instagram</span>
-					<span id="tg">Telegram</span>
-				</div>
-			</div>
-		</div>
-
-		
-
-	</section>
-
-
-
-	<section class="changer">
-		<div class="changer-text">
-			<div class="changer-text__title _anim-items _anim-no-hide">You know, I liked you, really liked you</div>
-			<div class="changer-text__subtitile _anim-items _anim-no-hide">And I want to give you a small handy <span>tool</span></div>
-			<span class="changer-text__click _anim-items _anim-no-hide">Click this shit!</span>
-		</div>
-		<div class="changer-text__name">/Currency exchanger!</div>
-
-		<div class="changer-app _anim-items _anim-no-hide">
-
-			<div class="container_app">
-
-        <div class="main">
-          <div class="wrapper">
-            <div class="tabs">
-              <div class="tab active" data-tab="convert">
-                <div class="tab-icon">
-                  <img src="./assets/images/exchange_page/exchange_app/convert.svg" alt="" />
-                </div>
-                <div class="tab-title">Convert</div>
-              </div>
-
-              <div class="tab" data-tab="single">
-                <div class="tab-icon">
-                  <img src="./assets/images/exchange_page/exchange_app/single.svg" alt="" />
-                </div>
-                <div class="tab-title">Single</div>
-              </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="/assets/images/Main_logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles/libs/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/header/header.css" />
+    <link rel="stylesheet" href="/styles/header/rightMenuJoke.css" />
+    <link rel="stylesheet" href="/styles/aboutPage.css" />
+    <link rel="stylesheet" href="/styles/moscow_page/moscowMain.css" />
+    <link rel="stylesheet" href="/styles/moscow_page/moscowSlider.css" />
+    <link rel="stylesheet" href="/styles/moscow_page/moscowHistoryBlock.css" />
+    <link rel="stylesheet" href="/styles/moscow_page/moscowWeatherBlock.css" />
+    <link rel="stylesheet" href="/styles/moscow_page/moscowDrinkBlock.css" />
+    <link rel="stylesheet" href="/styles/cremlin_page/colorsApp.css" />
+    <link rel="stylesheet" href="/styles/cremlin_page/cremlinMain.css" />
+    <link rel="stylesheet" href="/styles/cremlin_page/cremlinImage.css" />
+    <link rel="stylesheet" href="/styles/support_page/supportPageVideo.css" />
+    <link rel="stylesheet" href="/styles/support_page/supportPage.css" />
+    <link rel="stylesheet" href="/styles/exchange_page/exchangeMain.css" />
+    <link
+      rel="stylesheet"
+      href="/styles/exchange_page/exchange_app/exhangeApp.css"
+    />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/preload.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"
+      integrity="sha512-zInFF17qBFVvvvFpIfeBzo7Tj7+rQxLeTJDmbxjBz5/zIr89YVbTNelNhdTT+/DCrxoVzBeUPVFJsczKbB7sew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/6808a3d275.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>RTG</title>
+  </head>
+
+  <body>
+    <section class="preloader" id="page-preloader">
+      <div id="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <div class="text">Loading...</div>
+      </div>
+    </section>
+
+    <section class="mainPage" id="mainPage">
+      <div class="mainPage__background">
+        <div class="container_main">
+          <div class="mainPage__header">
+            <div class="mainPage__header-logo">
+              <img
+                src="/assets/images/Main_logo.png"
+                alt="Russian Travel Guide logo"
+                id="logo"
+              />
             </div>
 
-            <div class="content show" data-child="convert">
-              <form class="form">
-                <div class="form-inputs">
-                  <div class="form-group">
-                    <label for="amount">Amount</label>
-                    <input
-                      type="number"
-                      name="amount"
-                      id="amount"
-                      required
-                      placeholder="1.00"
-                    />
-                  </div>
-
-                  <div class="form-selects">
-                    <div class="form-select">
-                      <label for="from">From</label>
-                      <select class="select" name="from" id="from" required>
-                        <option value="" disabled selected hidden>
-                          Choose currency
-                        </option>
-                      </select>
-                    </div>
-
-                    <div class="form-select__icon switch-currencies">
-                      <img src="./assets/images/exchange_page/exchange_app/arrows.png" alt="" />
-                    </div>
-
-                    <div class="form-select">
-                      <label for="to">To</label>
-                      <select class="select" name="to" id="to" required>
-                        <option value="" disabled selected hidden>
-                          Choose currency
-                        </option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-info">
-                  <div class="loader">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-
-                  <div class="form-results">
-                    <div class="form-result__item from" id="resultFrom"></div>
-
-                    <div class="form-result__equals">
-                      <img src="./assets/images/exchange_page/exchange_app/equals.svg" alt="" />
-                    </div>
-
-                    <div class="form-result__item to" id="resultTo"></div>
-                  </div>
-
-                  <button type="submit" class="form-submit">Convert</button>
-                </div>
-
-                <div class="rate-information">
-                  <div class="rate-conversion"></div>
-                  <div class="rate-last"></div>
-                </div>
-              </form>
+            <div class="mainPage__header-leftMenu">
+              <button class="mainPage__header-leftMenu-item" id="About_us">
+                /About us
+              </button>
+              <button class="mainPage__header-leftMenu-item" id="Cities">
+                /Cities
+              </button>
+              <ul class="mainPage__header-leftMenu-submenu">
+                <li
+                  class="mainPage__header-leftMenu-submenu-item"
+                  id="Citi_page"
+                >
+                  Moscow
+                </li>
+                <li class="mainPage__header-leftMenu-submenu-item">Lorem.</li>
+                <li class="mainPage__header-leftMenu-submenu-item">Lorem.</li>
+              </ul>
+              <button class="mainPage__header-leftMenu-item" id="Gallery">
+                /Let's play
+              </button>
+              <button class="mainPage__header-leftMenu-item" id="Support">
+                /Support
+              </button>
             </div>
 
-            <div class="content" data-child="single">
-              <div class="currency-wrapper">
-                <div class="currency-single">
-                  <select class="select" id="singleSelect">
-                    <option value="" disabled selected hidden>
-                      Choose currency
-                    </option>
-                  </select>
-
-                  <div class="currency-single__item"></div>
-                </div>
-
-                <div class="currency-list"></div>
+            <div class="mainPage__header-rightMenu">
+              <div class="mainPage__header-rightMenu-name">RTG</div>
+              <div class="mainPage__header-rightMenu-logo"></div>
+            </div>
+          </div>
+          <div class="mainPageBot">
+            <div class="mainPage__info" id="info">
+              <div class="mainPage__info-header" id="infoHeader">
+                /Russian Travel Guide
               </div>
+              <p class="mainPage__info-desc" id="infoDesc">
+                We will break your
+                <span class="mainPage__info-des-span">stereotypes</span> about
+                Russia
+              </p>
 
-              <div class="currency-add">
-                <button class="currency-add__button">Add currency</button>
+              <button class="mainPage__info-button" id="infoButton">
+                <span style="--i: 1">L</span>
+                <span style="--i: 2">e</span>
+                <span style="--i: 3">t</span>
+                <span style="--i: 4">'</span>
+                <span style="--i: 5">s</span>
+                <span style="--i: 6">g</span>
+                <span style="--i: 7">o</span>
+                <span style="--i: 8">s</span>
+                <span style="--i: 9">u</span>
+                <span style="--i: 10">k</span>
+                <span style="--i: 11">a</span>
+                <span style="--i: 12">!</span>
+              </button>
+            </div>
 
-                <select class="select" id="addCurrencySelect">
-                  <option value="" disabled selected hidden>
-                    Choose currency
-                  </option>
-                </select>
+            <div class="mainPage__joke">
+              <div class="mainPage__joke-steps">
+                <img src="/assets/images/header/Steps.png" alt="" />
+              </div>
+              <div class="mainPage__joke-hero">
+                <img src="/assets/images/header/Putin.png" alt="" />
+              </div>
+              <div class="mainPage__joke-popup">
+                <img src="/assets/images/header/Popup.png" alt="" />
+                <div class="mainPage__joke-popup-text">
+                  That one menu <br />
+                  is not enough?!
+                </div>
+              </div>
+              <div class="mainPage__joke-arrow">
+                <img src="/assets/images/header/Header_arrow.png" alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-		</div>
-	</section>
+      <video
+        class="mainPage__video"
+        src="/assets/videos/main-background.mp4"
+        autoplay
+        loop
+        muted
+        disablePictureInPicture
+      ></video>
+    </section>
 
+    <section class="about" id="aboutPage">
+      <div class="about__background _anim-items _anim-no-hide"></div>
+      <div class="container_main">
+        <div class="about__text">
+          <div
+            class="about__text-title _anim-items _anim-no-hide"
+            id="text-title"
+          >
+            /So, boys, what are we going to do here?
+          </div>
 
+          <div
+            class="about__text-description _anim-items _anim-no-hide"
+            id="text-description"
+          >
+            Actually, a lot of...
+          </div>
 
-	<section class="footer _anim-items _anim-no-hide">
+          <button
+            class="about__text-description-button _anim-items _anim-no-hide"
+          >
+            Ok, son, try me
+          </button>
+        </div>
 
-		<video class="mainPage__video-footer _anim-items _anim-no-hide" src = "/assets/videos/main-background.mp4" autoplay loop muted disablePictureInPicture></video>
+        <div class="about__listMain">
+          <h1 class="about__text-list_header">/For example:</h1>
 
-		<div class="footer-logo _anim-items _anim-no-hide"></div>
-			<div class="footer__text-title _anim-items _anim-no-hide">Russuan Tourist Guide</div>
-			<div class="footer__text">
-				<div id="aboutFooter" class="footer__text-about _anim-items _anim-no-hide">/About us</div>
-				<div id="cityFooter" class="footer__text-cities _anim-items _anim-no-hide">/Cities</div>
-				<div id="playFooter" class="footer__text-play _anim-items _anim-no-hide">/Let's play</div>
-				<div id="supportFooter" class="footer__text-support _anim-items _anim-no-hide">/Support</div>
-				<div id="mainFooter" class="footer__text-main _anim-items _anim-no-hide">/Main page</div>
-		</div>
-		<adress class="footer-designer _anim-items _anim-no-hide"> © web-design & production by <a href="https://github.com/VarzArt">VarzArt</a></adress>
+          <ul class="about__list">
+            <li class="about__list-item item1" id="Learn">
+              /Learn smthng about motherRUSSIA
+            </li>
+            <li class="about__list-item item2" id="Find">
+              /Find out the weather in the <span>right</span> night city
+            </li>
+            <li class="about__list-item item3" id="Decorate">
+              /Decorate your own Kremlin
+            </li>
+            <li class="about__list-item item4" id="Just">
+              /Just have a fucking good time, yopta!
+            </li>
+          </ul>
 
-	</section>
+          <p class="about__text-list_footer">And that's not all</p>
+        </div>
+      </div>
+    </section>
 
-	<script src="/scripts/moscow_page/swiper-bundle.min.js"></script>
-	<script src="/scripts/basic_settings/preloader.js"></script>
-	<script src="/scripts/basic_settings/main.js"></script>
-	<script src="/scripts/basic_settings/scrolls.js"></script>
-	<script src="/scripts/header_animation.js"></script>
-	<script src="/scripts/about_page_button.js"></script>
-	<script src="/scripts/moscow_page/moscow_page_weather_app.js"></script>
-	<script src="/scripts/moscow_page/moscow_page_nav&cursor.js"></script>
-	<script src="/scripts/moscow_page/moscow_page_slider.js"></script>
-	<script src="/scripts/moscow_page/moscow_page_gallery.js"></script>
-	<script src="/scripts/game_colors_page.js"></script>
-	<script src="/scripts/support_page_animation.js"></script>
-	<script src="/scripts/exchange_page/exchange_main.js"></script>
-	<script type="module" src="./scripts/exchange_page/exhcange_app/index.js"></script>
-	<script type="module" src="./scripts/exchange_page/exhcange_app/events.js"></script>
-</body>
+    <section class="moscow" id="cityPage">
+      <div class="overlay"></div>
+
+      <div class="modal">
+        <img src="" alt="" class="modal__img" />
+      </div>
+      <div class="moscow_background _anim-items _anim-no-hide"></div>
+      <div class="container_main">
+        <div class="moscow__title">
+          <div class="moscow__title-text _anim-items _anim-no-hide">
+            /Let's start with Default-city
+          </div>
+          <p class="_anim-items _anim-no-hide _anim-no-hide">Moscow</p>
+        </div>
+        <div class="moscow__info">
+          <div class="moscow__navigation">
+            <div
+              class="moscow__navigation-item _anim-items _anim-no-hide"
+              id="moscow-nav-item1"
+            >
+              <a href="#"></a>
+              <div class="circle"></div>
+              <img
+                class="moscow__navigation-item-logo"
+                src="/assets/images/moscow_page/navigation/Hystory_logo.png"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="moscow__navigation-item _anim-items _anim-no-hide"
+              id="moscow-nav-item2"
+            >
+              <a href="#"></a>
+              <div class="circle-2"></div>
+              <img
+                class="moscow__navigation-item-logo"
+                src="/assets/images/moscow_page/navigation/Weather_logo.png"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="moscow__navigation-item _anim-items _anim-no-hide"
+              id="moscow-nav-item3"
+            >
+              <a href="#"></a>
+              <div class="circle-3"></div>
+              <img
+                class="moscow__navigation-item-logo"
+                src="/assets/images/moscow_page/navigation/Drink_logo.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="moscow__blocs">
+            <div
+              class="moscow__block hystory _anim-items _anim-no-hide"
+              id="hystory"
+            >
+              <div class="moscow__hystory-title">A little bit history</div>
+
+              <div class="moscow-history-desc">
+                <p id="p1">
+                  Moscow is a capital of Russia(Great Britain, hehe)
+                </p>
+                <p id="p2">Was founded in 1147</p>
+                <p id="p3">Square - 2561,5 км²</p>
+                <p id="p4">Population - 13 010 112 people</p>
+                <p id="p5">Time zone - UTC +3</p>
+                <p id="p6">Interesting fact:</p>
+                <p id="p7">
+                  *At the moment, native Muscovites are only 2% of the total
+                  population
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="moscow__block weather _anim-items _anim-no-hide chosen"
+              id="weather"
+            >
+              <h1 class="moscow__weather-title">Weather today</h1>
+
+              <div id="app">
+                <div id="root"></div>
+
+                <div class="popup" id="popup">
+                  <form action="GET" class="form-weather" id="form">
+                    <div class="form-weather-group">
+                      <input
+                        type="text"
+                        value=""
+                        name="city"
+                        class="form-weather-input"
+                        id="text-input"
+                        placeholder="London"
+                        required
+                      />
+                      <input
+                        type="submit"
+                        class="form-weather-submit"
+                        id="submit-button"
+                        value="OK"
+                      />
+                    </div>
+                  </form>
+
+                  <div class="popup-close" id="close">
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="moscow__block drink _anim-items _anim-no-hide"
+              id="drink"
+            >
+              <h1 class="moscow__drink-title">Top 3 places to drink</h1>
+
+              <div class="magic-list">
+                <a href="#" class="magic-list__item" id="list-item1">
+                  <div class="magic-list__header">Aviator Restaurant</div>
+                  <div class="cursor">
+                    <div
+                      class="cursor__image"
+                      style="
+                        background-image: url(/assets/images/moscow_page/drink_block/Aviator_photo.jpg);
+                      "
+                    ></div>
+                  </div>
+                </a>
+
+                <a href="#" class="magic-list__item" id="list-item2">
+                  <div class="magic-list__header">Mendeleev Bar</div>
+                  <div class="cursor">
+                    <div
+                      class="cursor__image"
+                      style="
+                        background-image: url(/assets/images/moscow_page/drink_block/Mendeleev_photo.jpg);
+                      "
+                    ></div>
+                  </div>
+                </a>
+
+                <a href="#" class="magic-list__item" id="list-item3">
+                  <div class="magic-list__header">Kotelnaya Bar</div>
+                  <div class="cursor">
+                    <div
+                      class="cursor__image"
+                      style="
+                        background-image: url(/assets/images/moscow_page/drink_block/Kotelynaya_photo.jpg);
+                      "
+                    ></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="moscow__gallery _anim-items _anim-no-hide">
+          <div class="swiper slider slider_main">
+            <div class="swiper-wrapper slider__wrapper">
+              <div class="swiper-slide slider__item">
+                <div
+                  class="slider__img"
+                  data-swiper-parallax="20%"
+                  style="
+                    background-image: url(/assets/images/moscow_page/swiper/Swiper_photo1.jpg);
+                  "
+                ></div>
+              </div>
+
+              <div class="swiper-slide slider__item">
+                <div
+                  class="slider__img"
+                  data-swiper-parallax="30%"
+                  style="
+                    background-image: url(/assets/images/moscow_page/swiper/Swiper_photo2.png);
+                  "
+                ></div>
+              </div>
+
+              <div class="swiper-slide slider__item">
+                <div
+                  class="slider__img"
+                  data-swiper-parallax="20%"
+                  style="
+                    background-image: url(/assets/images/moscow_page/swiper/Swiper_photo3.jpg);
+                  "
+                ></div>
+              </div>
+
+              <div class="swiper-slide slider__item">
+                <div
+                  class="slider__img"
+                  data-swiper-parallax="30%"
+                  style="
+                    background-image: url(/assets/images/moscow_page/swiper/Swiper_photo4.jpg);
+                  "
+                ></div>
+              </div>
+
+              <div class="swiper-slide slider__item">
+                <div
+                  class="slider__img"
+                  data-swiper-parallax="20%"
+                  style="
+                    background-image: url(/assets/images/moscow_page/swiper/Swiper_photo5.jpg);
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper slider slider_bg">
+            <div class="swiper-wrapper slider__wrapper">
+              <div class="swiper-slide slider__item">
+                <div
+                  class="slider__img"
+                  data-swiper-parallax="20%"
+                  style="
+                    background-image: url(/assets/images/moscow_page/swiper/Swiper_photo1.jpg);
+                  "
+                ></div>
+              </div>
+
+              <div class="swiper-slide slider__item">
+                <div
+                  class="slider__img"
+                  data-swiper-parallax="30%"
+                  style="
+                    background-image: url(/assets/images/moscow_page/swiper/Swiper_photo2.png);
+                  "
+                ></div>
+              </div>
+
+              <div class="swiper-slide slider__item">
+                <div
+                  class="slider__img"
+                  data-swiper-parallax="20%"
+                  style="
+                    background-image: url(/assets/images/moscow_page/swiper/Swiper_photo3.jpg);
+                  "
+                ></div>
+              </div>
+
+              <div class="swiper-slide slider__item">
+                /Images/Moscow_gallery_photoes/moscow_photo1.jpg
+                <div
+                  class="slider__img"
+                  data-swiper-parallax="30%"
+                  style="
+                    background-image: url(/assets/images/moscow_page/swiper/Swiper_photo4.jpg);
+                  "
+                ></div>
+              </div>
+
+              <div class="swiper-slide slider__item">
+                <div
+                  class="slider__img"
+                  data-swiper-parallax="20%"
+                  style="
+                    background-image: url(/assets/images/moscow_page/swiper/Swiper_photo5.jpg);
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider__navigation">
+            <button class="slider-next-item"></button>
+            <button class="slider-prev-item"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cremlin" id="playPage">
+      <div class="container_main">
+        <div class="cremlin_title">
+          <div class="cremlin-title _anim-items _anim-no-hide">
+            /If you wanna play, let's play*
+          </div>
+          <p class="cremlin-title-desc _anim-items _anim-no-hide">
+            (*Press the space bar to see the magic)
+          </p>
+        </div>
+
+        <div class="cremlinBot">
+          <div class="color__app _anim-items _anim-no-hide">
+            <div class="color__app-background"></div>
+
+            <div class="column">
+              <h2 data-type="copy"></h2>
+
+              <button data-type="lock">
+                <i class="fa-solid fa-lock-open" data-type="lock"></i>
+              </button>
+            </div>
+
+            <div class="column">
+              <h2 data-type="copy"></h2>
+
+              <button data-type="lock">
+                <i class="fa-solid fa-lock-open" data-type="lock"></i>
+              </button>
+            </div>
+
+            <div class="column">
+              <h2 data-type="copy"></h2>
+
+              <button data-type="lock">
+                <i class="fa-solid fa-lock-open" data-type="lock"></i>
+              </button>
+            </div>
+
+            <div class="column">
+              <h2 data-type="copy"></h2>
+
+              <button data-type="lock">
+                <i class="fa-solid fa-lock-open" data-type="lock"></i>
+              </button>
+            </div>
+
+            <div class="column">
+              <h2 data-type="copy"></h2>
+
+              <button data-type="lock">
+                <i class="fa-solid fa-lock-open" data-type="lock"></i>
+              </button>
+            </div>
+
+            <div class="column" id="last">
+              <h2 data-type="copy"></h2>
+
+              <button data-type="lock">
+                <i class="fa-solid fa-lock-open" data-type="lock"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="cremlin__image _anim-items _anim-no-hide">
+            <div class="cremlim__image-full">
+              <div class="cremlin__image-pick">
+                <p class="cremlin__image-pick-element"></p>
+                <p class="cremlin__image-pick-element"></p>
+                <p class="cremlin__image-pick-element"></p>
+              </div>
+
+              <div class="cremlin__image-clock">
+                <p class="cremlin__image-clock-element"></p>
+                <p></p>
+              </div>
+
+              <div class="cremlin__image-top">
+                <p class="cremlin__image-top-element"></p>
+                <p class="cremlin__image-top-element"></p>
+              </div>
+              <div class="bottom-cremlin">
+                <div class="cremlin__image-left">
+                  <p class="cremlin__image-left-element"></p>
+                  <p class="cremlin__image-left-element"></p>
+                  <p class="cremlin__image-left-element"></p>
+                  <p class="cremlin__image-left-element"></p>
+                  <p class="cremlin__image-left-element"></p>
+                </div>
+
+                <div class="cremlin__image-center">
+                  <p class="cremlin__image-center-element"></p>
+                  <p class="cremlin__image-center-element"></p>
+                </div>
+
+                <div class="cremlin__image-right">
+                  <p class="cremlin__image-right-element"></p>
+                  <p class="cremlin__image-right-element"></p>
+                  <p class="cremlin__image-right-element"></p>
+                  <p class="cremlin__image-right-element"></p>
+                  <p class="cremlin__image-right-element"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="support" id="supportPage">
+      <div class="container_main">
+        <div class="support_content">
+          <div class="support-video">
+            <div class="support-video-button">
+              <div
+                class="support-video-button-btn _anim-items _anim-no-hide"
+              ></div>
+              <div class="support-video-button-text">
+                Somehow we live like this
+              </div>
+            </div>
+            <div class="support-video-bg"></div>
+            <div class="suppurt-video-pedestal"></div>
+            <div class="support-video-loader"></div>
+            <video
+              src="/assets/videos/support_background.mp4"
+              class="support-video-video"
+              loop
+              muted
+              disablePictureInPicture
+            ></video>
+          </div>
+          <div class="support__text">
+            <div class="support__text-title _anim-items _anim-no-hide">
+              /You may <span>ask</span> why only one city
+            </div>
+            <div class="support__text-subtitle">
+              Well, a reasonable question
+            </div>
+            <div class="support__text-content">
+              <div class="support__text-content-title">I answer...</div>
+              <div class="support__text-content-subtitle">
+                You can support me on social networks and your city will appear
+                soon!
+              </div>
+              <div class="support__text-content-social">
+                <a
+                  href="https://github.com/VarzArt"
+                  class="support__text-content-social-github"
+                ></a>
+                <a
+                  href="https://instagram.com/varzart?igshid=YmMyMTA2M2Y="
+                  class="support__text-content-social-insta"
+                ></a>
+                <a
+                  href="https://t.me/s/russia"
+                  class="support__text-content-social-tg"
+                ></a>
+                <span id="github">gitHub</span>
+                <span id="insta">Instagram</span>
+                <span id="tg">Telegram</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="changer">
+      <div class="container_main">
+        <div class="changerTop">
+          <div class="changer-text">
+            <div class="changer-text__title _anim-items _anim-no-hide">
+              You know, I liked you, really liked you
+            </div>
+            <div class="changer-text__subtitile _anim-items _anim-no-hide">
+              And I want to give you a small handy <span>tool</span>
+            </div>
+            <span class="changer-text__click _anim-items _anim-no-hide"
+              >Click this shit!</span
+            >
+          </div>
+          <div class="changer-text__name">/Currency exchanger!</div>
+        </div>
+        <div class="changer-app _anim-items _anim-no-hide">
+          <div class="container_app">
+            <div class="main">
+              <div class="wrapper">
+                <div class="tabs">
+                  <div class="tab active" data-tab="convert">
+                    <div class="tab-icon">
+                      <img
+                        src="./assets/images/exchange_page/exchange_app/convert.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="tab-title">Convert</div>
+                  </div>
+
+                  <div class="tab" data-tab="single">
+                    <div class="tab-icon">
+                      <img
+                        src="./assets/images/exchange_page/exchange_app/single.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="tab-title">Single</div>
+                  </div>
+                </div>
+
+                <div class="content show" data-child="convert">
+                  <form class="form">
+                    <div class="form-inputs">
+                      <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input
+                          type="number"
+                          name="amount"
+                          id="amount"
+                          required
+                          placeholder="1.00"
+                        />
+                      </div>
+
+                      <div class="form-selects">
+                        <div class="form-select">
+                          <label for="from">From</label>
+                          <select class="select" name="from" id="from" required>
+                            <option value="" disabled selected hidden>
+                              Choose currency
+                            </option>
+                          </select>
+                        </div>
+
+                        <div class="form-select__icon switch-currencies">
+                          <img
+                            src="./assets/images/exchange_page/exchange_app/arrows.png"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="form-select">
+                          <label for="to">To</label>
+                          <select class="select" name="to" id="to" required>
+                            <option value="" disabled selected hidden>
+                              Choose currency
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-info">
+                      <div class="loader">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+
+                      <div class="form-results">
+                        <div
+                          class="form-result__item from"
+                          id="resultFrom"
+                        ></div>
+
+                        <div class="form-result__equals">
+                          <img
+                            src="./assets/images/exchange_page/exchange_app/equals.svg"
+                            alt=""
+                          />
+                        </div>
+
+                        <div class="form-result__item to" id="resultTo"></div>
+                      </div>
+
+                      <button type="submit" class="form-submit">Convert</button>
+                    </div>
+
+                    <div class="rate-information">
+                      <div class="rate-conversion"></div>
+                      <div class="rate-last"></div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="content" data-child="single">
+                  <div class="currency-wrapper">
+                    <div class="currency-single">
+                      <select class="select" id="singleSelect">
+                        <option value="" disabled selected hidden>
+                          Choose currency
+                        </option>
+                      </select>
+
+                      <div class="currency-single__item"></div>
+                    </div>
+
+                    <div class="currency-list"></div>
+                  </div>
+
+                  <div class="currency-add">
+                    <button class="currency-add__button">Add currency</button>
+
+                    <select class="select" id="addCurrencySelect">
+                      <option value="" disabled selected hidden>
+                        Choose currency
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer _anim-items _anim-no-hide">
+      <video
+        class="mainPage__video-footer _anim-items _anim-no-hide"
+        src="/assets/videos/main-background.mp4"
+        autoplay
+        loop
+        muted
+        disablePictureInPicture
+      ></video>
+      <div class="container_main">
+        <div class="footerContent">
+          <div class="footerTop">
+            <div class="footer-logo _anim-items _anim-no-hide"></div>
+            <div class="footer__text-title _anim-items _anim-no-hide">
+              Russuan Tourist Guide
+            </div>
+          </div>
+          <div class="footer__text">
+            <button
+              id="aboutFooter"
+              class="footer__text-about _anim-items _anim-no-hide"
+            >
+              /About us
+            </button>
+            <button
+              id="cityFooter"
+              class="footer__text-cities _anim-items _anim-no-hide"
+            >
+              /Cities
+            </button>
+            <button
+              id="playFooter"
+              class="footer__text-play _anim-items _anim-no-hide"
+            >
+              /Let's play
+            </button>
+            <button
+              id="supportFooter"
+              class="footer__text-support _anim-items _anim-no-hide"
+            >
+              /Support
+            </button>
+            <button
+              id="mainFooter"
+              class="footer__text-main _anim-items _anim-no-hide"
+            >
+              /Main page
+            </button>
+          </div>
+          <adress class="footer-designer _anim-items _anim-no-hide">
+            © web-design & production by
+            <a href="https://github.com/VarzArt">VarzArt</a></adress
+          >
+        </div>
+      </div>
+    </section>
+
+    <script src="/scripts/moscow_page/swiper-bundle.min.js"></script>
+    <script src="/scripts/basic_settings/preloader.js"></script>
+    <script src="/scripts/basic_settings/main.js"></script>
+    <script src="/scripts/basic_settings/scrolls.js"></script>
+    <script src="/scripts/header_animation.js"></script>
+    <script src="/scripts/about_page_button.js"></script>
+    <script src="/scripts/moscow_page/moscow_page_weather_app.js"></script>
+    <script src="/scripts/moscow_page/moscow_page_nav&cursor.js"></script>
+    <script src="/scripts/moscow_page/moscow_page_slider.js"></script>
+    <script src="/scripts/moscow_page/moscow_page_gallery.js"></script>
+    <script src="/scripts/game_colors_page.js"></script>
+    <script src="/scripts/support_page_animation.js"></script>
+    <script src="/scripts/exchange_page/exchange_main.js"></script>
+    <script
+      type="module"
+      src="./scripts/exchange_page/exhcange_app/index.js"
+    ></script>
+    <script
+      type="module"
+      src="./scripts/exchange_page/exhcange_app/events.js"
+    ></script>
+  </body>
 </html>

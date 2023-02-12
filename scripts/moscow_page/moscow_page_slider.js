@@ -5,13 +5,17 @@ const sliderMain = new Swiper(".slider_main", {
   parallax: true,
   breakpoints: {
     0: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
     680: {
       slidesPerView: 2,
       spaceBetween: 60,
     },
+		2000: {
+			slidesPerView: 3,
+      spaceBetween: 60,
+		}
   },
   navigation: {
     nextEl: ".slider-next-item",

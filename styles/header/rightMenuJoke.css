@@ -1,13 +1,31 @@
+.mainPage__joke {
+  height: 100%;
+  width: 30%;
+  font-size: 1vw;
+  position: relative;
+}
+@media screen and (max-width: 900px) {
+  .mainPage__joke {
+    display: none;
+  }
+}
+
 .mainPage__joke-steps {
   position: absolute;
-  right: 2.5rem;
-  bottom: 4rem;
+  right: 1rem;
+  bottom: 0;
   opacity: 0;
 }
 
 .mainPage__joke-steps img {
-  width: 22.5rem;
-  height: 13rem;
+  width: 29em;
+  height: 17em;
+}
+@media screen and (min-width: 2000px) {
+  .mainPage__joke-steps img {
+    width: 580px;
+    height: 345px;
+  }
 }
 
 .mainPage__joke-steps.active {
@@ -16,14 +34,26 @@
 
 .mainPage__joke-hero {
   position: absolute;
-  right: 6rem;
-  bottom: 10.5rem;
+  right: 7em;
+  bottom: 10.5em;
   transform: translateY(200%);
+}
+@media screen and (min-width: 2000px) {
+  .mainPage__joke-hero {
+    right: 125px;
+    bottom: 230px;
+  }
 }
 
 .mainPage__joke-hero img {
-  width: 12.3rem;
-  height: 16.4rem;
+  width: 16em;
+  height: 21em;
+}
+@media screen and (min-width: 2000px) {
+  .mainPage__joke-hero img {
+    width: 320px;
+    height: 420px;
+  }
 }
 
 .mainPage__joke-hero.active {
@@ -32,11 +62,20 @@
 
 .mainPage__joke-popup {
   position: absolute;
-  width: 8.5rem;
-  height: 8.5rem;
-  bottom: 27rem;
-  right: 2.5rem;
+  width: 14em;
+  height: 14em;
+  bottom: 27.5em;
+  right: 0;
   transform: rotate(-10deg) translate3d(200%, 0, 0);
+  opacity: 0;
+}
+@media screen and (min-width: 2000px) {
+  .mainPage__joke-popup {
+    width: 280px;
+    height: 280px;
+    bottom: 580px;
+    right: -20px;
+  }
 }
 
 .mainPage__joke-popup.active {
@@ -44,33 +83,56 @@
 }
 
 .mainPage__joke-popup img {
-  width: 11rem;
-  height: 11rem;
+  width: 14em;
+  height: 14em;
+}
+@media screen and (min-width: 2000px) {
+  .mainPage__joke-popup img {
+    width: 280px;
+    height: 280px;
+  }
 }
 
 .mainPage__joke-popup-text {
   position: absolute;
   font-family: "Paper", sans-serif;
-  font-size: 1.2rem;
-  top: 3.2rem;
+  font-size: 1.7vw;
+  top: 2.4em;
   width: max-content;
-  right: -0.8rem;
+  right: 1em;
   transform: rotate(-15deg);
-	color: black;
+  color: black;
+}
+@media screen and (min-width: 2000px) {
+  .mainPage__joke-popup-text {
+    font-size: 34px;
+  }
 }
 
 .mainPage__joke-arrow img {
-  width: 8rem;
-  height: 10rem;
+  width: 10em;
+  height: 12em;
+}
+@media screen and (min-width: 2000px) {
+  .mainPage__joke-arrow img {
+    width: 200px;
+    height: 250px;
+  }
 }
 
 .mainPage__joke-arrow {
   position: absolute;
-  bottom: 27rem;
-  right: 22rem;
+  bottom: 29em;
+  right: 24em;
   transform: rotate(90deg);
   opacity: 0;
   transition: opacity 0.3s ease 2.3s;
+}
+@media screen and (min-width: 2000px) {
+  .mainPage__joke-arrow {
+    bottom: 550px;
+    right: 500px;
+  }
 }
 
 .mainPage__joke-arrow.active {
@@ -94,14 +156,14 @@
 
 .mainPage__info-desc span.active::before {
   content: "";
-  width: 5rem;
-  height: 2rem;
+  width: 20%;
+  height: 100%;
   background-image: url(/assets/images/header/Graffiti.png);
   background-size: 100% 100%;
   background-position: center;
   position: absolute;
-  top: -2rem;
-  left: 20rem;
+  top: -100%;
+  left: 50%;
   transform: rotate(-10deg);
 }
 
@@ -189,6 +251,7 @@
   }
   to {
     transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 

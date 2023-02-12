@@ -3,12 +3,13 @@
 .cremlin__image {
   opacity: 0;
   transition: opacity 2s ease-in;
-  width: 27rem;
-  height: 24.5rem;
+  width: 27em;
+  height: 24.5em;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 5em;
 }
 
 .cremlim__image-full {
@@ -18,6 +19,16 @@
   height: max-content;
   width: max-content;
   align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .cremlim__image-full {
+    margin-top: 7em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cremlim__image-full {
+    margin-top: 11em;
+  }
 }
 
 .cremlin__image._active {
@@ -35,8 +46,8 @@
 
 .cremlin__image-left {
   position: relative;
-  width: 10rem;
-  height: 10rem;
+  width: 10em;
+  height: 10em;
 }
 
 .cremlin__image-left::after {
@@ -54,34 +65,34 @@
 .cremlin__image-left::before {
   position: absolute;
   content: "";
-  width: 6rem;
-  height: 6.8rem;
+  width: 6em;
+  height: 6.8em;
   background-image: url(/assets/images/game_page/Putin_stencil.png);
   background-position: center;
   background-size: cover;
-  bottom: 0.5rem;
-  left: 2rem;
+  bottom: 0.5em;
+  left: 2em;
   z-index: 2;
 }
 
 .cremlin__image-left-element:first-child,
 .cremlin__image-left-element:nth-child(3) {
-  width: 3rem;
-  height: 3rem;
+  width: 3em;
+  height: 3em;
   position: absolute;
   left: 0;
-  top: -1rem;
+  top: -1em;
 }
 
 .cremlin__image-left-element:nth-child(3) {
-  left: 5rem;
+  left: 5em;
 }
 
 .cremlin__image-left-element:nth-child(2) {
   position: absolute;
-  width: 10.5rem;
+  width: 10.5em;
   bottom: 0;
-  height: 8rem;
+  height: 8em;
   left: 0;
 }
 
@@ -89,17 +100,17 @@
 .cremlin__image-left-element:nth-child(5) {
   width: 0;
   height: 0;
-  border-left: 1.5rem solid transparent;
-  border-right: 1.5rem solid transparent;
-  border-top: 2rem solid black;
+  border-left: 1.5em solid transparent;
+  border-right: 1.5em solid transparent;
+  border-top: 2em solid black;
   background: none !important;
   position: absolute;
   left: 0;
-  top: -1rem;
+  top: -1.1em;
 }
 
 .cremlin__image-left-element:nth-child(5) {
-  left: 5rem;
+  left: 5em;
 }
 
 /* CREMLIN-IMAGE-CENTER-BLOCK */
@@ -119,7 +130,7 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  bottom: 1.9rem;
+  bottom: 1.9em;
   left: 0;
   z-index: 5;
 }
@@ -146,9 +157,9 @@
   height: 2em;
   bottom: 0;
   left: 0;
-  border-right: 0.3rem solid black;
-  border-left: 0.3rem solid black;
-  border-top: 0.3rem solid black;
+  border-right: 0.3em solid black;
+  border-left: 0.3em solid black;
+  border-top: 0.3em solid black;
 }
 
 .cremlin__image-center-element:first-child {
@@ -157,8 +168,8 @@
 }
 
 .cremlin__image-center-element:last-child {
-  bottom: 2em;
-  height: 10.3em;
+  bottom: 1.9em;
+  height: 10.4em;
   z-index: 2;
 }
 
@@ -166,8 +177,8 @@
 
 .cremlin__image-right {
   position: relative;
-  width: 10rem;
-  height: 10rem;
+  width: 10em;
+  height: 10em;
 }
 
 .cremlin__image-right::after {
@@ -186,22 +197,22 @@
   background-image: url(/assets/images/game_page/Bodrov_stencil.png);
   position: absolute;
   content: "";
-  width: 6rem;
-  height: 6.8rem;
+  width: 6em;
+  height: 6.8em;
   background-position: center;
   background-size: cover;
-  bottom: 0.5rem;
-  left: 2rem;
+  bottom: 0.5em;
+  left: 2em;
   z-index: 2;
 }
 
 .cremlin__image-right-element:first-child,
 .cremlin__image-right-element:nth-child(3) {
-  width: 3rem;
-  height: 3rem;
+  width: 3em;
+  height: 3em;
   position: absolute;
   right: 0;
-  top: -1rem;
+  top: -1em;
 }
 
 .cremlin__image-right-element:nth-child(3) {
@@ -210,9 +221,9 @@
 
 .cremlin__image-right-element:nth-child(2) {
   position: absolute;
-  width: 10.5rem;
+  width: 10.5em;
   bottom: 0;
-  height: 8rem;
+  height: 8em;
   right: 0;
 }
 
@@ -220,13 +231,13 @@
 .cremlin__image-right-element:nth-child(4) {
   width: 0;
   height: 0;
-  border-left: 1.5rem solid transparent;
-  border-right: 1.5rem solid transparent;
-  border-top: 2rem solid black;
+  border-left: 1.5em solid transparent;
+  border-right: 1.5em solid transparent;
+  border-top: 2em solid black;
   background: none !important;
   position: absolute;
   right: 0;
-  top: -1rem;
+  top: -1.1em;
 }
 
 .cremlin__image-right-element:nth-child(5) {
@@ -310,7 +321,7 @@
 .cremlin__image-pick-element:first-child {
   position: absolute;
   width: 4em;
-  height: 9em;
+  height: 8.9em;
   bottom: 0;
   left: 0;
 }
@@ -323,7 +334,7 @@
   border-left: 2em solid transparent;
   background: none !important;
   bottom: 0;
-  right: 0;
+  right: -1.5px;
 }
 
 .cremlin__image-pick-element:last-child {
@@ -334,7 +345,7 @@
   border-right: 2em solid transparent;
   background: none !important;
   bottom: 0;
-  left: 0;
+  left: -1.5px;
 }
 
 /* CREMLIN-IMAGE-CLOCK-BLOCK */

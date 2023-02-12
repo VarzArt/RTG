@@ -3,12 +3,26 @@
 .moscow__weather-title {
   text-align: end;
   margin-right: 0.5vw;
-  font-size: 2rem;
+  font-size: 1.8em;
   font-weight: 400;
+}
+@media screen and (max-width: 500px) {
+  .moscow__weather-title {
+    text-align: center;
+    width: 100vw;
+    margin-left: -0.8em;
+    text-align: center;
+    margin-top: -2.5em;
+  }
 }
 
 .moscow__block.weather {
   background-image: url(/assets/images/moscow_page/navigation/Nav_item_border_weather.png);
+}
+@media screen and (max-width: 500px) {
+  .moscow__block.weather {
+    background-image: none;
+  }
 }
 
 .moscow__block.weather.chosen img {
@@ -19,7 +33,7 @@
 
 #app {
   position: absolute;
-  width: 32em;
+  width: 31em;
   height: 24em;
   top: 2em;
   left: 0;
@@ -27,15 +41,26 @@
   border-radius: 0.5em;
   overflow: hidden;
 }
+@media screen and (max-width: 500px) {
+  #app {
+    height: max-content;
+    margin-left: -1.5em;
+  }
+}
 
 #app::after {
   content: "";
   position: absolute;
   height: 17em;
-  width: 32em;
+  width: 15em;
   background: linear-gradient(to left, black, transparent);
   top: 0;
   right: 0;
+}
+@media screen and (max-width: 500px) {
+  #app::after {
+    height: 60%;
+  }
 }
 
 #app::before {
@@ -47,6 +72,11 @@
   top: 0;
   left: 0;
   z-index: 1;
+}
+@media screen and (max-width: 500px) {
+  #app::before {
+    height: 60%;
+  }
 }
 
 #root {
@@ -170,7 +200,9 @@
     #7f5a83,
     transparent
   );
-  width: 100%;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
   height: 60%;
   position: absolute;
   top: 0;
@@ -196,23 +228,55 @@
   padding-left: 2.5em;
   padding-right: 2.5em;
   z-index: 3;
+  width: 32em;
+}
+@media screen and (max-width: 500px) {
+  .top {
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 80vw;
+    margin: 0 auto;
+  }
 }
 
 .top-left {
   max-width: 80%;
 }
+@media screen and (max-width: 500px) {
+  .top-left {
+    text-align: center;
+  }
+}
 
 .top-right {
   text-align: right;
+}
+@media screen and (max-width: 500px) {
+  .top-right {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .city-info {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 500px) {
+  .city-info {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
 
 .city {
   width: max-content;
+}
+@media screen and (max-width: 500px) {
+  .city {
+    width: 100%;
+  }
 }
 
 .city-subtitle {
@@ -220,6 +284,13 @@
   font-style: italic;
   line-height: 1em;
   color: #ffffff;
+}
+@media screen and (max-width: 500px) {
+  .city-subtitle {
+    font-size: 1.5em;
+    line-height: 1.7em;
+    text-align: center;
+  }
 }
 
 .city-title {
@@ -233,11 +304,27 @@
   width: max-content;
   text-shadow: 1px 1px 2px #0d324d, 0 0 1em #5de6de, 0 0 0.2em #5de6de;
 }
+@media screen and (max-width: 500px) {
+  .city-title {
+    font-size: 2em;
+    line-height: 2.2em;
+    text-align: center;
+    width: 100%;
+  }
+}
 
 .city-info__subtitle {
   font-size: 0.5em;
   line-height: 1em;
   color: #ffffff;
+}
+@media screen and (max-width: 500px) {
+  .city-info__subtitle {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .city-info__title {
@@ -246,6 +333,11 @@
   line-height: 1.3em;
   color: #ffffff;
   text-shadow: 1px 1px 2px #b58ecc, 0 0 1em #7f5a83, 0 0 0.2em #7f5a83;
+}
+@media screen and (max-width: 500px) {
+  .city-info__title {
+    font-size: 5em;
+  }
 }
 
 .moscow__block.chosen .city-info__subtitle,
@@ -261,10 +353,22 @@
   color: #ffffff;
   text-shadow: 1px 1px 2px #b1bfd8, 0 0 1em #6782b4, 0 0 0.2em #6782b4;
 }
+@media screen and (max-width: 500px) {
+  .description {
+    font-size: 1.5em;
+    line-height: 1.7em;
+  }
+}
 
 .icon {
   width: 3em;
   height: 3em;
+}
+@media screen and (max-width: 500px) {
+  .icon {
+    width: 6em;
+    height: 6em;
+  }
 }
 
 .moscow__block.chosen .city-subtitle,
@@ -291,10 +395,23 @@
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 500px) {
+  .property {
+    width: 35vw;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
 .property-icon {
   width: 2em;
   margin-right: 1em;
+}
+@media screen and (max-width: 500px) {
+  .property-icon {
+    width: 3em;
+    margin-right: 0;
+  }
 }
 
 .property-info__value {
@@ -302,6 +419,13 @@
   font-size: 0.8em;
   line-height: 1.2em;
   color: #fff;
+}
+@media screen and (max-width: 500px) {
+  .property-info__value {
+    font-size: 1.5em;
+    line-height: 1.7em;
+    text-align: center;
+  }
 }
 
 .property-info__description {
@@ -311,6 +435,15 @@
   text-transform: uppercase;
   color: #6b6b6b;
   margin-top: 0.2em;
+}
+@media screen and (max-width: 500px) {
+  .property-info__description {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    text-align: center;
+    color: #fff;
+    opacity: 0.6;
+  }
 }
 
 .moscow__block.chosen #properties {
@@ -323,6 +456,16 @@
   row-gap: 2em;
   justify-content: space-between;
   animation: backInUp 0.7s ease-in-out 0.8s 1 both;
+  width: 32em;
+}
+@media screen and (max-width: 500px) {
+  .moscow__block.chosen #properties {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: max-content;
+    margin: 0 auto;
+  }
 }
 
 @keyframes appearanceTopLeft {

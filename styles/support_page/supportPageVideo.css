@@ -4,6 +4,23 @@
   position: relative;
   margin: 0;
   z-index: 2;
+  font-size: 1.25vw;
+}
+@media screen and (min-width: 2000px) {
+  .support-video {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .support-video {
+    font-size: 2.25vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .support-video {
+    font-size: 3vw;
+    margin-left: 1.5em;
+  }
 }
 
 .support-video-bg {

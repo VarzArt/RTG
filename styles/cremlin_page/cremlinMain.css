@@ -9,6 +9,18 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  margin-top: -0.1em;
+}
+@media screen and (max-width: 900px) {
+  .cremlin {
+    height: 150vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cremlin {
+    height: 115vh;
+    min-height: 1000px;
+  }
 }
 
 .cremlin::after {
@@ -23,16 +35,44 @@
 
 /* CREMLIN-TITLE */
 
+.cremlin_title {
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+  justify-content: space-between;
+  font-size: 2.5vw;
+}
+@media screen and (min-width: 2000px) {
+  .cremlin_title {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .cremlin_title {
+    font-size: 5vw;
+    margin-left: 0.75em;
+    height: 7.5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cremlin_title {
+    margin-top: 2em;
+    font-size: 6vw;
+    margin-left: -0.4em;
+    height: 4em;
+  }
+}
+
 .cremlin-title {
-  position: absolute;
+  position: relative;
   color: #fff;
-  top: 1em;
-  left: 5em;
   font-family: "Graphic", sans-serif;
   font-weight: 400;
   opacity: 0.7;
-  font-size: 2rem;
+  font-size: 1em;
   opacity: 0;
+  width: max-content;
+  margin-left: 2.7em;
 }
 
 .cremlin-title._active,
@@ -56,19 +96,59 @@
 }
 
 .cremlin-title-desc {
-  position: absolute;
   color: #fff;
-  top: 3.5em;
-  left: 14em;
   font-family: "Graphic", sans-serif;
   font-weight: 400;
   opacity: 0.7;
-  font-size: 1.5em;
+  font-size: 0.6em;
   opacity: 0;
+  margin-left: 15em;
+  margin-top: 1em;
+}
+@media screen and (max-width: 900px) {
+  .cremlin-title-desc {
+    margin-left: 0em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cremlin-title-desc {
+    font-size: 0.8em;
+  }
 }
 
 /* CREMLIN-IMAGE-TECH-BLOCK */
 
 #last {
   display: none;
+}
+
+.cremlinBot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+  margin-top: -3em;
+  font-size: 1.25vw;
+}
+@media screen and (min-width: 2000px) {
+  .cremlinBot {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .cremlinBot {
+    flex-direction: column;
+    height: 80%;
+    font-size: 2.5vw;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cremlinBot {
+    height: 70%;
+    font-size: 3vw;
+  }
 }

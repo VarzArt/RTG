@@ -11,6 +11,11 @@ html {
   scroll-behavior: smooth;
   font-size: 24px;
 }
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 16px;
+  }
+}
 
 * {
   padding: 0;
@@ -38,6 +43,22 @@ html {
 
 .container_main {
   position: relative;
-  padding: 0 115px;
+  padding: 0 3em;
+  padding-top: 2em;
   height: 100%;
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 900px) {
+  .container_main {
+    padding: 0 2em;
+    padding-top: 2em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container_main {
+    padding: 0 1em;
+    padding-top: 1em;
+  }
 }

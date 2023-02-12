@@ -8,26 +8,105 @@
   font-family: "Graphic", sans-serif;
   overflow: hidden;
   position: relative;
+  margin-top: -0.1em;
+}
+@media screen and (max-width: 900px) {
+  .moscow {
+    height: 200vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .moscow {
+    min-height: 1600px;
+  }
+}
+
+.moscow_background {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .moscow_background {
+    display: block;
+    background-image: url(/assets/images/moscow_page/moscow_background.jpg);
+    width: 100%;
+    height: 25%;
+    background-size: 100% 100%;
+    position: relative;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+}
+@media screen and (max-width: 500px) {
+  .moscow_background {
+    height: 20%;
+  }
+}
+
+.moscow_background._active {
+  opacity: 0.5;
+}
+
+.moscow_background::after {
+  content: "";
+  background-image: linear-gradient(to left, black, transparent);
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  right: 0;
+}
+
+.moscow_background::before {
+  content: "";
+  background-image: linear-gradient(to right, black, transparent);
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  left: 0;
 }
 
 .moscow::after {
   content: "";
   position: absolute;
   width: 100%;
-  height: 15%;
-  bottom: 0;
+  height: 25%;
+  bottom: 4.7vh;
   background: linear-gradient(to top, black, transparent);
-  z-index: 100;
+  z-index: 1;
   pointer-events: none;
+}
+@media screen and (max-width: 900px) {
+  .moscow::after {
+    height: 5%;
+    bottom: 0;
+  }
 }
 
 /* MOSCOW-PAGE-TITLE */
 
 .moscow__title {
-  position: absolute;
-  left: 6em;
-  top: 1em;
-  font-size: 2.5rem;
+  font-size: 3.2vw;
+  margin-left: 2.6em;
+  position: relative;
+}
+@media screen and (min-width: 2000px) {
+  .moscow__title {
+    font-size: 64px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .moscow__title {
+    font-size: 5vw;
+    width: max-content;
+    margin: 0 auto;
+    margin-left: 3.5em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .moscow__title {
+    font-size: 6vw;
+    margin-left: 2.5em;
+  }
 }
 
 .moscow__title > * {
@@ -52,15 +131,34 @@
 .moscow__title-text::before {
   content: "/03";
   position: absolute;
-  left: -20%;
+  left: -10%;
+}
+@media screen and (max-width: 900px) {
+  .moscow__title-text::before {
+    left: -20%;
+  }
 }
 
 .moscow__title p {
   position: absolute;
   left: 3.5em;
-  top: 1.25em;
-  font-size: 1.25em;
+  bottom: -1.5em;
+  font-size: 1em;
   opacity: 0;
+}
+@media screen and (max-width: 900px) {
+  .moscow__title p {
+    font-size: 1.2em;
+    left: 2.5em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .moscow__title p {
+    font-size: 1.5em;
+    width: 100vw;
+    left: -1.9em;
+    text-align: center;
+  }
 }
 
 .moscow__title p._active {
@@ -75,29 +173,57 @@
 /* MOSCOW-PAGE-GALLERY */
 
 .moscow__gallery {
-  width: 50%;
-  height: 100vh;
-  left: 60%;
+  width: 44vw;
+  height: 90vh;
+  left: calc(60% + 3em);
+  top: 50%;
+  transform: translateY(-50%);
   overflow: hidden;
-  position: relative;
+  position: absolute;
   opacity: 0;
   transition: opacity 2s ease-in;
+}
+@media screen and (max-width: 900px) {
+  .moscow__gallery {
+    width: 100%;
+    height: 32.5%;
+    left: 0;
+    top: 59%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .moscow__gallery {
+    height: 25%;
+    top: 68%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .moscow__gallery {
+    height: 38%;
+    top: 62%;
+  }
 }
 
 .moscow__gallery._active {
   opacity: 1;
 }
 
-.moscow__gallery::after {
+.moscow__blocs::before {
   content: "";
   background: url(/assets/images/moscow_page/Gradient.png);
   background-size: contain;
-  height: 100%;
-  width: 25%;
+  height: 110%;
+  width: 7em;
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
+  top: -10%;
+  right: -7.5em;
+  z-index: 1;
+  pointer-events: none;
+}
+@media screen and (max-width: 900px) {
+  .moscow__blocs::before {
+    display: none;
+  }
 }
 
 .moscow__gallery::before {
@@ -114,28 +240,71 @@
 
 /* MOSCOW-PAGE-NAV */
 
+.moscow__info {
+  height: 90%;
+  width: 64%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 900px) {
+  .moscow__info {
+    flex-direction: column-reverse;
+    height: 45%;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .moscow__info {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 3em;
+    position: relative;
+  }
+}
+
 .moscow__navigation {
-  position: absolute;
-  top: 30em;
-  left: 5em;
-  transform: translateY(-80%);
+  font-size: 2vw;
   z-index: 5;
-  height: 20em;
-  width: 3rem;
+  height: 10em;
+  width: 2em;
   opacity: 0.8;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: auto 0;
+}
+@media screen and (min-width: 2000px) {
+  .moscow__navigation {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .moscow__navigation {
+    flex-direction: row;
+    width: 70%;
+    height: 2em;
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .moscow__navigation {
+    width: 80%;
+    height: 4em;
+    font-size: 8vw;
+  }
 }
 
 /* MOSCOW-PAGE-NAV-ITEM */
 
 .moscow__navigation-item {
-  height: 5em;
+  height: max-content;
   cursor: pointer;
   opacity: 0;
   z-index: 5;
+  position: relative;
 }
 
 .moscow__navigation-item._active {
@@ -156,7 +325,7 @@
 
 .moscow__navigation-item-logo {
   width: 100%;
-  height: 60%;
+  height: 2em;
 }
 
 #moscow-nav-item1:hover .circle,
@@ -169,8 +338,9 @@
 .circle-2,
 .circle-3 {
   position: absolute;
-  top: 1em;
-  left: 0.8em;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   z-index: 1;
   width: 1.5em;
   height: 1.5em;
@@ -179,17 +349,14 @@
   background: #cccccc;
 }
 
-.circle-2 {
-  left: 0.3em;
-}
-
 /* MOSCOW-PAGE-NAV-BLOCK */
 
 .moscow__block {
+  font-size: 1.25vw;
   position: absolute;
   width: 35em;
-  left: 12em;
-  top: 11.5em;
+  right: 0;
+  top: 50%;
   height: 24em;
   background-image: url(/assets/images/moscow_page/navigation/Nav_item_border.png);
   background-size: contain;
@@ -199,10 +366,51 @@
   font-family: "Graphic", sans-serif;
   transition: opacity 0.7s ease;
 }
+@media screen and (min-width: 2000px) {
+  .moscow__block {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .moscow__block {
+    font-size: 2.5vw;
+    left: -3.5em;
+    top: 67.5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .moscow__block {
+    font-size: 3vw;
+    height: 50em;
+    top: 30em;
+    background-image: none;
+    width: 100%;
+    left: 0;
+  }
+}
 
 .moscow__block._active.chosen {
-  animation: slideInUp 0.7s both;
+  animation: slideInUpBlock 0.7s both;
   opacity: 0.7;
+}
+
+.moscow__blocs {
+  height: 100%;
+  width: 80%;
+  position: relative;
+}
+@media screen and (max-width: 900px) {
+  .moscow__blocs {
+    height: 60%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .moscow__blocs {
+    margin-top: 0;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 /* ANIMATION */
@@ -220,14 +428,25 @@
 
 @keyframes illuminate {
   0% {
-    transform: scale(0.7, 0.7);
+    transform: scale3d(0.7, 0.7) translateX(-50%) translateY(-50%);
     opacity: 0.7;
   }
   50% {
     opacity: 0.3;
   }
   100% {
-    transform: scale(4);
+    transform: scale(3) translateX(-16.7%) translateY(-16.7%);
     opacity: 0;
+  }
+}
+
+@keyframes slideInUpBlock {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-50%);
+    opacity: 0.7;
   }
 }

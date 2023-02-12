@@ -31,7 +31,7 @@ input[type="number"] {
 }
 
 .container_app {
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
   min-height: 75vh;
   display: flex;
@@ -86,8 +86,8 @@ h1 {
 .main::before {
   width: 220px;
   height: 220px;
-  bottom: 0;
-  left: -180px;
+  bottom: -100px;
+  left: -120px;
   background: url(/assets/images/exchange_page/exchange_app/bitcoin.png)
     no-repeat center/contain;
   z-index: 1;
@@ -177,6 +177,9 @@ h1 {
     #fa5897 51.57%,
     rgba(255, 88, 95, 0) 100%
   );
+}
+.tab-title {
+  font-size: 24px;
 }
 .tab-icon {
   width: 18px;
@@ -278,7 +281,7 @@ h1 {
 }
 @media screen and (max-width: 500px) {
   .form-select__icon {
-    padding: 25px auto 0 auto;
+    margin: 25px auto 5px auto;
   }
 }
 .form-select__icon:hover {
@@ -497,6 +500,7 @@ h1 {
   line-height: 19px;
   color: #f5f5f5;
   min-width: 40px;
+  font-size: 24px;
 }
 .currency-full {
   font-weight: 400;

@@ -1,5 +1,3 @@
-// ANIMATION-ON-SCROLL
-
 const animItems = document.querySelectorAll('._anim-items');
 
 if(animItems.length > 0) {

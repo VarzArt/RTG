@@ -7,13 +7,19 @@
 
 .color__app {
   font-family: "Gogono", sans-serif;
-  font-size: 1rem;
+  font-size: 1em;
   height: 24.5em;
   display: flex;
   position: relative;
   width: 27em;
   margin-top: 5em;
+  margin-left: 5em;
   opacity: 0;
+}
+@media screen and (max-width: 900px) {
+  .color__app {
+    margin-left: 0;
+  }
 }
 
 .color__app._active {
@@ -83,7 +89,7 @@
   border-radius: 0.5em;
   border: none;
   background: transparent;
-  font-size: 1rem;
+  font-size: 1em;
   color: #fff;
   transition: background 0.3s ease;
 }
