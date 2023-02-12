@@ -78,4 +78,4 @@ _Titus Maccius Plautus 184 BC_
 
 [Instagram](https://instagram.com/varzart?igshid=YmMyMTA2M2Y=)
 [Telegram](https://t.me/varzart)
-[HaedHunter](https://spb.hh.ru/resume/0eab0807ff094b93600039ed1f7a61716c7964)
+[HeadHunter](https://spb.hh.ru/resume/0eab0807ff094b93600039ed1f7a61716c7964)
