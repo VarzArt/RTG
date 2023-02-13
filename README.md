@@ -4,6 +4,7 @@
 ## 1. About project
 
 The service is aimed at a European audience and has the goal of introducing a potential tourist to the minimum necessary information for traveling around the cities of Russia.
+The site is adapted to any permissions and is displayed correctly on any type of device.
 
 ## 2. What the service can offer
 
